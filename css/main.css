@@ -1,0 +1,54 @@
+#content {
+  max-width: 760px;
+  margin: 5% auto;
+}
+
+body {
+  background-color: #767676;
+  color: white;
+  font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+header {
+  background-color: #0e2e49;
+  text-align: center;
+  padding: 10px;
+}
+
+img {
+  float: right;
+  width: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+main {
+  background-color: #00668a;
+  padding: 3px;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display";
+}
+
+footer {
+  background-color: #0e2e49;
+  font-size: 14px;
+  text-align: center;
+  padding: 5px;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: #fac705;
+}
+
+ul li {
+  line-height: 2em;
+}
