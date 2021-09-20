@@ -1,0 +1,30 @@
+/* one column grid lay out */
+#content {
+  max-width: 760px;
+  margin: 5% auto;
+}
+
+body {
+  background-color: #767676;
+  color: white;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: "Noto Serif", serif;
+}
+h1 {
+  font-size: 1.5em;
+}
+h2 {
+  font-size: 1.3em;
+}
+h3 {
+  font-size: 1.1em;
+}
+img {
+  width: 200px;
+}
