@@ -1,1 +1,26 @@
 /*media query with a three column lay out */
+@media only screen and (min-width: 60em) {
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2.75em;
+  }
+  h3 {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 1.75em;
+  }
+  a {
+    font-size: 1.75em;
+  }
+  footer {
+    font-size: 1.5em;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+  }
+} ;

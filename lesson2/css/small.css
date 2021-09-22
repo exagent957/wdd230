@@ -1,7 +1,7 @@
 /* one column grid lay out */
 #content {
-  max-width: 760px;
-  margin: 5% auto;
+  max-width: 960px;
+  margin: auto;
 }
 
 body {
@@ -10,6 +10,12 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   margin: 0;
+}
+header {
+  text-align: center;
+  line-height: 2.5em;
+  background-color: #08294c;
+  padding: 1px;
 }
 h1,
 h2,
@@ -24,7 +30,40 @@ h2 {
 }
 h3 {
   font-size: 1.1em;
+  background-color: #0058a8;
+  margin: 0;
+  padding: 2%;
+  border-radius: 10px 10px 0 0;
+}
+p {
+  padding: 2%;
+}
+a {
+  padding: 2%;
 }
 img {
-  width: 200px;
+  width: 96%;
+  height: auto;
+  padding: 2%;
+}
+footer {
+  text-align: center;
+  color: black;
+  font-size: 8px;
+  font-weight: bolder;
+}
+a:link {
+  color: #fac705;
+}
+a:visited {
+  color: #fac705;
+}
+.grid-container {
+  display: block;
+}
+.column-container {
+  background-color: rgb(49, 49, 49);
+  border-style: solid;
+  border-radius: 10px;
+  margin-top: 2%;
 }

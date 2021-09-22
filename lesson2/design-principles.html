@@ -5,24 +5,25 @@
     <meta name="description" content="WDD230 Lesson02" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lesson 2 - Design Principles</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
   </head>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-  />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="css/small.css" />
-  <link rel="stylesheet" href="css/medium.css" />
-  <link rel="stylesheet" href="css/large.css" />
   <body>
     <div id="content">
       <header>
@@ -30,61 +31,77 @@
         <h2>Marc Williamson</h2>
       </header>
       <main>
-        <h3 class="left-header">Contrast</h3>
-        <p class="left-business">Harbor Freight</p>
-        <div class="left-weblink">
-          <a href="https://www.harborfreight.com">harborfreight.com</a>
-        </div>
-        <div class="left-image">
-          <img
-            src="images/Screenshot_harborfreight.jpg"
-            alt="Screen shot of
+        <div class="grid-container">
+          <div class="column-container">
+            <div class="left-container">
+              <h3 class="left-header">Contrast</h3>
+              <p class="left-business">Harbor Freight</p>
+              <div class="left-weblink">
+                <a href="https://www.harborfreight.com">harborfreight.com</a>
+              </div>
+              <div class="left-image">
+                <img
+                  src="images/Screenshot_harborfreight.jpg"
+                  alt="Screen shot of
           harborfreight.com on mobile phone"
-          />
+                />
+              </div>
+              <p class="left-discussion">
+                The above website employed the design principle of contrast in
+                the use of a red-white-blue color theme in the first ad and the
+                use of and black-white-yellow-red color theme in the second ad.
+                Both of these color combinations pop very well and draw the
+                reader's eye to them. Also, note the contrast in the first ad
+                between "5%, 5%, and 10%" which draws the user's eye to "10% in
+                Harbor Freight Money".
+              </p>
+            </div>
+          </div>
+          <div class="column-container">
+            <div class="center-container">
+              <h3 class="center-header">Repetition</h3>
+              <p class="center-business">Tractor Supply</p>
+              <div class="center-weblink">
+                <a href="https://www.tractorsupply.com">tractorsupply.com</a>
+              </div>
+              <div class="center-image">
+                <img
+                  src="images/Screenshot_tractorsupply.jpg"
+                  alt="Screen shot of tractorsupply.com from mobile phone"
+                />
+              </div>
+              <p class="center-discussion">
+                The above website utilized the design principle of repetition
+                nicely by making all of the shop or purchase clickable buttons
+                the same style and color scheme (red rectangles with white
+                letters in all caps). This allows the user to quickly locate
+                where to click to see more items or to purchase a product.
+              </p>
+            </div>
+          </div>
+          <div class="column-container">
+            <div class="right-container">
+              <h3 class="right-header">Proximity</h3>
+              <p class="right-business">Costco</p>
+              <div class="right-weblink">
+                <a href="https://www.costco.com">costco.com</a>
+              </div>
+              <div class="right-image">
+                <img
+                  src="images/Screenshot_costco.jpg"
+                  alt="Screen shot of costco.com from mobile phone"
+                />
+              </div>
+              <p class="right-discussion">
+                The above website effectively displayed design principle of
+                proximity by placing descriptive text directly below each item
+                for sale. The user can clealy understand by this close grouping
+                of picture to text exactly which picture the description belongs
+                to.
+              </p>
+            </div>
+          </div>
         </div>
-        <p class="left-discussion">
-          The above website employed the design principle of contrast in the use
-          of a red-white-blue color theme in the first ad and the use of and
-          black-white-yellow-red color theme in the second ad. Both of these
-          color combinations pop very well and draw the reader's eye to them.
-          Also, note the contrast in the first ad between "5%, 5%, and 10%"
-          which draws the user's eye to "10% in Harbor Freight Money".
-        </p>
-        <h3 class="center-header">Repetition</h3>
-        <p class="center-business">Tractor Supply</p>
-        <div class="center-weblink">
-          <a href="https://www.tractorsupply.com">tractorsupply.com</a>
-        </div>
-        <div class="center-image">
-          <img
-            src="images/Screenshot_tractorsupply.jpg"
-            alt="Screen shot of tractorsupply.com from mobile phone"
-          />
-        </div>
-        <p class="center-discussion">
-          The above website utilized the design principle of repetition nicely
-          by making all of the shop or purchase clickable buttons the same style
-          and color scheme (red rectangles with white letters in all caps). This
-          allows the user to quickly locate where to click to see more items or
-          to purchase a product.
-        </p>
-        <h3 class="right-header">Proximity</h3>
-        <p class="right-business">Costco</p>
-        <div class="right-weblink">
-          <a href="https://www.costco.com">costco.com</a>
-        </div>
-        <div class="right-image">
-          <img
-            src="images/Screenshot_costco.jpg"
-            alt="Screen shot of costco.com from mobile phone"
-          />
-        </div>
-        <p class="right-discussion">
-          The above website effectively displayed design principle of proximity
-          by placing descriptive text directly below each item for sale. The
-          user can clealy understand by this close grouping of picture to text
-          exactly which picture the description belongs to.
-        </p>
       </main>
       <footer>
         <p>
