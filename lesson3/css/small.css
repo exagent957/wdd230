@@ -1,0 +1,38 @@
+/*small view - styles start here and progress to larger viewports*/
+body {
+  max-width: 960px;
+  text-align: center;
+  margin: 5% auto;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+nav ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+  background: linear-gradient(90deg, transparent, yellow, transparent) top /
+    var(--d, 0) 10px no-repeat;
+  transition: 0.5s;
+}
+p {
+  text-align: left;
+}
+
+.logo {
+  max-width: 5rem;
+}
+.logo-credit {
+  font-size: 8pt;
+  text-align: left;
+}
+/*css specific for index.html*/
+#domain-name {
+  font-weight: bolder;
+}
