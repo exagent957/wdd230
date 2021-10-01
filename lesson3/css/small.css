@@ -2,7 +2,15 @@
 body {
   max-width: 960px;
   text-align: center;
-  margin: 5% auto;
+  margin: auto;
+  background-color: rgb(255, 255, 248);
+  font-family: PT sans-serif;
+  font-size: 12pt;
+}
+header {
+  background-color: #fdd900;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 nav ul {
   list-style-type: none;
@@ -12,27 +20,71 @@ nav ul {
 }
 nav ul li a {
   display: block;
-  color: black;
+  background-color: #3e54b8;
+  color: white;
+  white-space: nowrap;
   text-align: center;
+  border: solid;
   padding: 0.75rem;
   text-decoration: none;
   font-size: 0.95rem;
-  background: linear-gradient(90deg, transparent, yellow, transparent) top /
-    var(--d, 0) 10px no-repeat;
-  transition: 0.5s;
+}
+h1,
+h2,
+h3 {
+  font-family: Noto serif;
+}
+a:hover {
+  background-color: #9c5126;
+  color: white;
 }
 p {
   text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
 }
-
 .logo {
-  max-width: 5rem;
+  max-width: 3rem;
 }
 .logo-credit {
-  font-size: 8pt;
-  text-align: left;
+  font-size: 6pt;
+  text-align: center;
 }
-/*css specific for index.html*/
+.moto {
+  text-align: center;
+  font-weight: bold;
+}
+footer {
+  font-family: Noto serif;
+  font-size: 10pt;
+  background-color: #26aaf7;
+  color: black;
+  font-weight: bolder;
+  padding: 0.75%;
+}
+footer p {
+  text-align: center;
+}
+/*css specific to index.html*/
 #domain-name {
+  font-weight: bolder;
+}
+/*css specific to color-scheme.html*/
+.site-header-color {
+  background-color: #fdd900;
+}
+.primary-navigation {
+  background-color: #3e54b8;
+  color: white;
+}
+.primary-navigation:hover {
+  background-color: #9c5126;
+}
+.site-footer-color {
+  background-color: #26aaf7;
+  font-family: Noto serif;
+}
+/*css specific to target-audience.html*/
+.tourist-link {
   font-weight: bolder;
 }
