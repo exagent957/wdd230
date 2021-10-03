@@ -1,0 +1,117 @@
+Intro
+Hi, Marc Williamson here to discuss Chrome Developer Tools or DevTools for short. Most of this presentation is taken from 
+https://developer.chrome.com/docs/devtools/overview/
+and from my personal tinkering in DevTools.
+
+I am a novice and have recently discovered just the basics of DevTools. I will focus my comments on the Elements Panel and the Styles Tab.
+
+What is DevTools?
+Chrome DevTools is a set of web developer tools built directly into the Google Chrome browser. 
+DevTools can help you edit pages on-the-fly and diagnose problems quickly, which ultimately helps you build better websites, faster.
+ 
+DevTools helps to debug html and css when your browser is doing something other than what you expected.
+ 
+Changes you make in DevTools to the DOM or css styles are temporary by default, consider it a preview if you will. 
+
+Simply reloading the page resets everything to original values so there is no need to worry about messing up the source code. 
+
+Let’s take a look at how to launch DevTools.
+
+--- Switch to just screen sharing ---
+
+Launching DevTools:
+Let’s take a look how to launch DevTools (Show Weather Site Planning Document)
+
+A quick way to launch DevTools is to right click on an element and click inspect. This takes you directly to that spot in the source code under the Elements panel and the css under the Styles tab.
+ 
+(close DevTools with F12)
+
+DevTools can also be launched by clicking on the 3 vertical stacked dots on the far-right side of your browser bar in Chrome, selecting More Tools, then Developer Tools. Keyboard shortcut is Cntrl+Shift+ I or Cmnd+ Option+ I
+
+You can hide/show DevTools by toggling F12.
+
+General setup: 
+You have options for the placement of DevTools windows. Click vertical dots and try various docking positions... left, right, bottom (default position), and new window.
+ 
+You can also select a horizontal or vertical orientation of the DevTools windows by clicking the gear icon and selecting panel layout dropdown box. 
+
+You can also split the Styles tab by clicking box with the arrow in it on the far right of the filter bar.
+
+Device Views Button:
+You can use the Device Toolbar to approximate how your page looks and performs on various devices. 
+By default, the Device Toolbar opens in Responsive Viewport Mode. 
+
+(Discuss other dropdown options here)
+
+3 vertical dots dropdown provides options... I like Show Media Queries.  
+Rotate button standard or landscape view.
+
+Element Selector Button
+The element selector button is important. Small square with an arrow in it. 
+
+This is something I was frustrated with in the past. I did not understand how the instructor was seeing such a fine level of detail when I was not getting any of that information on my screen. Once I learned about this little button things started clicking. 
+
+Without the element selector turned on you are basically interacting with the page live and you are not in the inspect code mode. 
+
+With the button selected (click button), note how you can select and element by clicking on it. The button then turns itself off again. You need to select it again for the next selected element. 
+
+
+Elements panel:
+It appears the panel we will work with the most in this course is the Elements panel. This is where we see the html source code displayed in a cascading format to keep the view uncluttered and organized by nodes. Click the right arrow to expand the node and the down arrow to retract your blocks of code.
+
+Other panels:
+The Console panel to the right is useful to debug JavaScript. The Lighthouse panel (hidden over here) can analyze the page and generate a performance report to help identify trouble spots. 
+
+Back to Elements panel:
+With the element selector button on you can hover over the page and the corresponding source code becomes highlighted in the Element panel. 
+
+Or you can hover over items in the element panel and corresponding highlighted blocks appear on the page. 
+
+With the element inspector button activated you can hover over any element and obtain useful information about it. 
+
+Notice the different colors and how they match the colors in the box model. 
+
+
+Notice how a small summary popup window appears when hovering over an element when the element selector button is on. This provides a quick reference for styles applied without having to dig through the styles pane. I like seeing the contrast score.
+
+You can double click an element in the Element panel and make temporary changes that are displayed on the page until you reload the page.
+
+Cntrl+F or Cmnd+F opens a search bar at the bottom of the Elements panel where you can search for any key word in the source code. The results are highlighted.
+
+Styles tab:
+The Styles tab shows styling properties being applied to the source code. Shows the current values and the suppressed css will have a strike through line. 
+
+Notice over to the top right of each css block there is a link containing the name of the css file and line number. Clicking this links opens the css file. 
+
+
+Filter bar for css styled elements:
+You can type directly into the bar how you want to filter css. Example: margin filters css down to instances where "margin" is utilized in the selected element.
+
+
+Prototyping CSS under Styles tab:
+Once an element is selected you can find a small window near the top of the Styles pane called element.style. This is one place where you can apply different styling properties to that element. 
+
+(Show example of border by selecting h2 or paragraph then typing border then solid.  Add italic... just start typing italic) Reload to clear changes.
+
+Example (using up/down arrow to increment/decrement values) - changes value by 1.
+Shift up/down uses steps of 10. Select some text block and adjust margin with up/down arrow or Shift+up/down. Can also click on little check boxes to turn properties on or off.
+
+Example (showing css for hover style for a button or link) 
+Notice in Styles pane on the same line with Filter there is :hov. Click on :hov and select :hover to see the styling for hover
+
+Example (color picker tool – select some text element on a colored background - click on “color” box in css - will show if contrast ratio passes for various font colors. Drag color selector to see changes in contrast score.)
+
+Example (how to apply a previously declared class to another element)
+Click on .cls just to the right of :hov and begin typing the name of the class you wish to apply. (For this example type logo )(can add more than 1 class - just separate classes by a space) The new classes are applied to the selected element and small check boxes appear at top of styles tab. Can toggle them.
+
+
+Example of copy->copy styles then applying it to another element. Select element. Right click in Elements pane. Select copy - copy styles. Paste this (cntrl v) into element.style on same page or different page.
+
+Using the box model:
+Find the box model at the bottom of the Styles tab or under the Computed tab. The box model can also be activated to appear in a separate panel to the right of the Styles tab by clicking on the small box with a left facing arrow at the far right of the filter bar. 
+
+Can double click on any value in the box model to change it.
+
+(Back to speaker view)
+Summary/conclusion:
+Trying out things in DevTools can be faster than changing the source code in VS Code, saving your changes, and then looking at the results in the Chrome browser. If you take some time to get familiar with each panel or tab to understand what's possible, you may discover that DevTools can seriously boost your productivity.
