@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Marc Williamson" />
+    <meta
+      name="description"
+      content="Lesson 4 Beginning of the Preston town page by Marc Williamson, WDD 230: Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <title>Preston town page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="images/owl.png" alt="weather site logo owl" />
+      <section class="header-center">
+        <h1 class="header-title">Weather In Southeastern Idaho</h1>
+        <h2 class="moto">The wise choice for weather and more</h2>
+      </section>
+      <button onclick="toggleMenu()" class="hamburger-button">
+        &#9776;<br /><span class="button-title">Menu</span>
+      </button>
+    </header>
+    <nav>
+      <ul id="primaryNav" class="hide">
+        <li><a href="#">Home</a></li>
+        <li class="active"><a href="preston-4.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Preston Idaho</h2>
+      <img class="hero-image" src="#" alt="Hero image to be placed here" />
+      <h3>Weather Summary</h3>
+      <p>Weather Summary discussion will go here.</p>
+      <section class="five-day-forecast">
+        <h3>Five Day Forecast</h3>
+        <h3>Article Title</h3>
+        <p>Contents of article</p>
+        <img
+          class="article-image"
+          src="#"
+          alt="Article-related image will go here"
+        />
+      </section>
+    </main>
+    <footer>
+      <section class="contact-container">
+        <h3>Contact Information</h3>
+        <p>Email</p>
+        <p>Phone</p>
+        <img class="footer-map" src="#" alt="Footer map will go here" />
+      </section>
+      <div class="footer-bar">
+        <p>
+          &copy; <span id="year"></span> Weather in Southeast Idaho wiseid.info
+          | <span id="current-date"></span>
+        </p>
+      </div>
+    </footer>
+    <script src="js/currentYear.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
