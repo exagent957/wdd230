@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-family: Acme, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+main {
+  margin: 0.5rem auto;
+  border: 1px solid #999;
+  padding: 0.5rem;
+  background-color: #bed;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 95%;
+}
+
+input,
+button {
+  padding: 0.35rem;
+  margin-left: 1rem;
+  font-size: 1.1rem;
+}
+
+input {
+  width: 200px;
+}
+
+label {
+  font-size: 0.9rem;
+}
+.listcontainer {
+  border: 1px solid blck;
+  background-color: rgb(209, 37, 209);
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.list {
+  background-color: wheat;
+  border: solid rgb(77, 72, 72);
+  margin: 1rem;
+  padding: 3em;
+}
+
+ul {
+  margin: 1rem;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  color: red;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  text-align: center;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+@media only screen and (min-width: 32.5em) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    width: 480px;
+  }
+}
