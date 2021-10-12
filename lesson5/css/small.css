@@ -1,0 +1,105 @@
+/*small view - styles start here and progress to larger viewports*/
+body {
+  text-align: center;
+  margin: auto;
+  background-color: rgb(255, 255, 248);
+  font-family: PT sans-serif;
+  font-size: 7pt;
+}
+header {
+  display: flex;
+  background-color: #fdd900;
+  padding: 5px 0;
+  align-items: center;
+  justify-content: center;
+}
+header .hamburger-button {
+  margin: 0.2rem 2%;
+  background-color: transparent;
+  color: #555;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 15px;
+}
+.button-title {
+  font-size: 14px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+nav ul.hide {
+  display: none;
+}
+nav ul li a {
+  display: block;
+  background-color: #3e54b8;
+  color: white;
+  white-space: nowrap;
+  text-align: center;
+  border: solid;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+nav ul li.active a {
+  background-color: #9c5126;
+  color: white;
+}
+nav ul li a:hover {
+  background-color: #fddead;
+  color: #000;
+  font-weight: bold;
+}
+h1,
+h2,
+h3 {
+  font-family: Noto serif;
+}
+p {
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.header-center {
+  text-align: left;
+  line-height: 2em;
+  margin-left: 2%;
+}
+.header-title {
+  margin: 0;
+}
+.moto {
+  font-size: 1em;
+  font-weight: bold;
+  font-style: italic;
+  margin: 0;
+  white-space: nowrap;
+}
+.logo {
+  width: 60px;
+  margin-left: 5%;
+}
+main {
+  align-items: center;
+  justify-content: center;
+}
+footer {
+  font-family: Noto serif;
+  font-size: 10pt;
+  background-color: #26aaf7;
+  color: black;
+  font-weight: bolder;
+  padding: 0.95%;
+}
+footer p {
+  text-align: center;
+}
+.footer-bar {
+  background-color: #3e54b8;
+  color: white;
+  padding: 0.5%;
+}

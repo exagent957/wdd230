@@ -1,0 +1,30 @@
+/*medium view*/
+@media only screen and (min-width: 32.5em) {
+  body {
+    font-size: 14pt;
+  }
+  header .hamburger-button {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul.hide {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1 1 100%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  nav ul li a {
+    font-size: 0.8rem;
+  }
+  footer {
+    font-size: 12pt;
+  }
+  .logo {
+    width: 97px;
+  }
+}
