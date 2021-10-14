@@ -87,6 +87,42 @@ main {
   align-items: center;
   justify-content: center;
 }
+.hero-image {
+  width: 100%;
+}
+.weather-summary {
+  width: 34%;
+  position: relative;
+  top: -15em;
+  left: 3em;
+  background-color: #f9f8f7ad;
+  box-shadow: 0 4px 8px 0 rgba(206, 120, 120, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1em;
+}
+.weather-summary ul {
+  font-size: 1.5em;
+  font-weight: bolder;
+  line-height: 0.75em;
+  padding-right: 2em;
+}
+.weather-summary li {
+  display: block;
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+.five-day-forecast {
+  display: none;
+}
+.article-container {
+  margin-top: -12em;
+}
+.article-image {
+  width: 100%;
+}
+.article-attribution {
+  font-style: italic;
+}
 footer {
   font-family: Noto serif;
   font-size: 10pt;

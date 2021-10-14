@@ -12,9 +12,9 @@
   .logo {
     width: 120px;
   }
-}
-main,
-footer {
-  max-width: 960px;
-  margin: 0 auto;
+  main,
+  footer {
+    max-width: 960px;
+    margin: 0 auto;
+  }
 }
