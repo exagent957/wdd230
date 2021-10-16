@@ -13,6 +13,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,6 +32,12 @@
     <link rel="stylesheet" href="css/large.css" />
   </head>
   <body>
+    <div id="banner" class="hide">
+      <p>
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. at the city park
+        pavilion.
+      </p>
+    </div>
     <header>
       <img class="logo" src="images/owl.png" alt="weather site logo owl" />
       <section class="header-center">
@@ -67,9 +77,30 @@
           <li>Wind Speed: <span class="wind-speed">5 mph</span></li>
         </section>
       </div>
-      <ul class="five-day-forecast">
-        Five Day Forecast
-      </ul>
+      <!--       <section class="five-day-forecast"> -->
+      <div class="five-day-forecast">
+        <figure>
+          <img src="images/Sunny.png" alt="Sunny day" />
+          <figcaption>SUN 76&#8457;</figcaption>
+        </figure>
+        <figure>
+          <img src="images/Sunny.png" alt="Sunny day" />
+          <figcaption>MON 76&#8457;</figcaption>
+        </figure>
+        <figure>
+          <img src="images/Sunny.png" alt="Sunny day" />
+          <figcaption>TUES 76&#8457;</figcaption>
+        </figure>
+        <figure>
+          <img src="images/Sunny.png" alt="Sunny day" />
+          <figcaption>WED 76&#8457;</figcaption>
+        </figure>
+        <figure>
+          <img src="images/Sunny.png" alt="Sunny day" />
+          <figcaption>THUR 76&#8457;</figcaption>
+        </figure>
+      </div>
+      <!--       </section> -->
       <section class="article-container">
         <h3>
           PHS marching band takes top places <br />
@@ -113,13 +144,39 @@
       </section>
     </main>
     <footer>
-      <section class="contact-container">
-        <h3>Contact Information</h3>
-        <p>Email</p>
-        <p>Phone</p>
-        <img class="footer-map" src="#" alt="Footer map will go here" />
-      </section>
+      <div class="map-contact-container">
+        <img
+          class="footer-map"
+          src="images/preston-map.jpg"
+          alt="Google map of Preston ID"
+        />
+        <section class="contact-container">
+          <h3>Weather In Southeast Idaho</h3>
+          <p>
+            <span class="material-icons md-18">home</span>1800 Main St, Preston,
+            ID 00000
+          </p>
+          <p>
+            <span class="material-icons md-18">email</span>Contact@wiseid.info
+          </p>
+          <p><span class="material-icons md-18">phone</span>866-385-1234</p>
+        </section>
+      </div>
       <div class="footer-bar">
+        <div class="socialmedia-container">
+          <a href="https://www.facebook.com"
+            ><img src="images/facebook.png" alt="Facebook logo"
+          /></a>
+          <a href="https://www.twitter.com"
+            ><img src="images/twitter.png" alt="Twitter logo"
+          /></a>
+          <a href="https://www.youtube.com"
+            ><img src="images/youtube.png" alt="YouTube logo"
+          /></a>
+          <a href="https://www.linkedin.com"
+            ><img src="images/linkedin.png" alt="LinkedIn logo"
+          /></a>
+        </div>
         <p>
           &copy; <span id="year"></span> Weather in Southeast Idaho wiseid.info
           | <span id="current-date"></span>
@@ -128,5 +185,6 @@
     </footer>
     <script src="js/currentYear.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/toggleBanner.js"></script>
   </body>
 </html>

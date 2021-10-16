@@ -17,4 +17,7 @@
     max-width: 960px;
     margin: 0 auto;
   }
+  .contact-container {
+    font-size: 1.5em;
+  }
 }
