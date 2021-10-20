@@ -3,7 +3,7 @@ body {
   text-align: center;
   margin: auto;
   background-color: rgb(255, 255, 248);
-  font-family: "PT sans-serif";
+  font-family: "PT Sans";
   font-size: 7pt;
 }
 body #banner.hide {
@@ -68,7 +68,7 @@ nav ul li a:hover {
 h1,
 h2,
 h3 {
-  font-family: "Noto serif";
+  font-family: "Noto Serif";
 }
 p {
   text-align: left;
