@@ -51,17 +51,14 @@
     </nav>
     <main>
       <h2>Preston Idaho</h2>
-      <img
-        class="hero-image"
-        src="images/franklin500.jpg"
-        alt="TEST Image ************ Be sure to change this back"
-        srcset="
-          images/franklin500.jpg   800w,
-          images/franklin900.jpg  2000w,
-          images/franklin1200.jpg 3000w
-        "
-        sizes="100vw"
-      />
+      <picture class="hero-image">
+        <source
+          srcset="images/franklin900.jpg"
+          media="(min-width: 650px) and (max-width: 1199px)"
+        />
+        <source srcset="images/franklin1200.jpg" media="(min-width: 1200px)" />
+        <img src="images/franklin500.jpg" alt="Test Image only" />
+      </picture>
       <section class="weather-summary">
         <h3>Weather Summary</h3>
         <ul>
@@ -74,7 +71,6 @@
           <li>Wind Speed: <span id="wind-speed">5</span>mph</li>
         </ul>
       </section>
-      <!--       <section class="five-day-forecast"> -->
       <div class="five-day-forecast">
         <figure>
           <img src="images/Sunny.png" alt="Sunny day" />
@@ -97,7 +93,6 @@
           <figcaption>THUR 76&#8457;</figcaption>
         </figure>
       </div>
-      <!--       </section> -->
       <section class="article-container">
         <h3>
           PHS marching band takes top places <br />
