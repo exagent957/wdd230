@@ -1,0 +1,34 @@
+/*large view*/
+@media only screen and (min-width: 60em) {
+  body {
+    font-size: 16pt;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  nav ul li a {
+    font-size: 1.5rem;
+  }
+  .logo {
+    width: 120px;
+  }
+  /*styling for gallery images - 3 columns in large media query*/
+  .gallery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .gallery-image-text {
+    font-size: 0.7em;
+    text-align: center;
+    line-height: 0em;
+  }
+  main,
+  footer {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .contact-container {
+    font-size: 1.5em;
+  }
+}

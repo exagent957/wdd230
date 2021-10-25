@@ -42,25 +42,28 @@
     <nav>
       <ul id="primaryNav" class="hide">
         <li><a href="#">Home</a></li>
-        <li class="active"><a href="preston-6.html">Preston</a></li>
+        <li class="active"><a href="preston-7.html">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
         <li><a href="#">Storm Center</a></li>
-        <li><a href="#">Gallery</a></li>
+        <li><a href="gallery-7.html">Gallery</a></li>
       </ul>
     </nav>
     <main>
       <h2>Preston Idaho</h2>
       <picture>
         <source
-          srcset="images/franklin900.jpg"
+          srcset="images/preston-hero-image800.jpg"
           media="(min-width: 650px) and (max-width: 1199px)"
         />
-        <source srcset="images/franklin1200.jpg" media="(min-width: 1200px)" />
+        <source
+          srcset="images/preston-hero-image1020.jpg"
+          media="(min-width: 1200px)"
+        />
         <img
           class="hero-image"
-          src="images/franklin500.jpg"
-          alt="Test Image only"
+          src="images/preston-hero-image400.jpg"
+          alt="Open field with flowers and barn in Preston"
         />
       </picture>
       <section class="weather-summary">
@@ -141,11 +144,22 @@
     </main>
     <footer>
       <div class="map-contact-container">
-        <img
-          class="footer-map"
-          src="images/preston-map.jpg"
-          alt="Google map of Preston ID"
-        />
+        <picture>
+          <source
+            srcset="images/preston-map600.jpg"
+            media="(min-width: 650px) and (max-width: 1199px)"
+          />
+          <source
+            srcset="images/preston-map900.jpg"
+            media="(min-width: 1200px)"
+          />
+          <img
+            class="footer-map"
+            src="images/preston-map300.jpg"
+            alt="Google satellite image of 
+          Preston"
+          />
+        </picture>
         <section class="contact-container">
           <h3>Weather In Southeast Idaho</h3>
           <p>
