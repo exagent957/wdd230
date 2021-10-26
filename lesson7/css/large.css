@@ -14,14 +14,15 @@
   }
   /*styling for gallery images - 3 columns in large media query*/
   .gallery-container {
+    width: 960px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
   }
+
   .gallery-image-text {
     font-size: 0.7em;
     text-align: center;
-    line-height: 0em;
   }
   main,
   footer {
