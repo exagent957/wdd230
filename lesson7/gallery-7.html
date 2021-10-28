@@ -46,6 +46,10 @@
     <main>
       <h2>Local Weather Gallery</h2>
       <h3>Send us your favorite weather pictures</h3>
+      <h4>
+        Days since your last visit to our gallery:
+        <span id="daysPassed"> </span>
+      </h4>
       <div class="gallery-container">
         <figure class="gallery-image-container">
           <img
@@ -191,6 +195,7 @@
     <script src="js/currentYear.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/gallery-lazyloader.js" defer></script>
+    <script src="js/localstorage.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
       WebFont.load({ google: { families: ["PT Sans", "Noto Serif"] } });

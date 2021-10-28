@@ -19,10 +19,13 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
   }
-
+  .gallery-image-container:hover {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
   .gallery-image-text {
     font-size: 0.7em;
     text-align: center;
+    padding: 0 0 0.5em 0;
   }
   main,
   footer {
