@@ -11,5 +11,8 @@ if (myStorage.getItem("lastVisit")) {
   //subtract miliseconds and divide by 86400000 to convert to days - truncate to lowest whole day
   const daysPassed = Math.trunc((currentVisit - previousVisit) / 86400000);
   document.getElementById("daysPassed").innerText = daysPassed;
-  myStorage.setItem("lastVisit", currentVisit);
+} else {
+  document.getElementById("daysPassed").innerText = "0";
 }
+//reset lastVisit to currentVisit
+myStorage.setItem("lastVisit", currentVisit);
