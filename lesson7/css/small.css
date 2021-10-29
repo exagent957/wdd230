@@ -145,7 +145,7 @@ main h3 {
   display: grid;
   grid-template-columns: repeat(5, 20%);
   position: relative;
-  top: -12em;
+  top: -11em;
   margin: 2%;
   background-color: #26aaf7;
   list-style-type: none;
