@@ -1,0 +1,70 @@
+:root {
+  --border: hsl(0, 0%, 20%);
+  --borderlight: hsl(0, 0%, 33%);
+  --shadow: hsl(0, 0%, 30%);
+  --trodd: #e7f0ed;
+  --treven: #e7ffed;
+  --back2: #628ca6;
+  --back: #7fb9c2;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+table {
+  table-layout: fixed;
+  width: 100%;
+  border: thin solid var(--border);
+  box-shadow: 0.5em 0.5em 1em var(--shadow);
+  border-collapse: collapse;
+}
+thead tr:nth-child(2) {
+  background-color: var(--back2);
+  color: white;
+  white-space: nowrap;
+}
+tr:first-child th {
+  background-color: var(--back);
+  color: black;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+tfoot tr:last-child {
+  background-color: var(--back);
+  font-size: 0.75em;
+  font-weight: bold;
+}
+th,
+td {
+  padding: 7px 15px;
+  border: 1px solid var(--borderlight);
+}
+
+th {
+  background-color: var(--back2);
+}
+
+td {
+  text-align: center;
+}
+tbody {
+  color: black;
+}
+tbody tr:nth-child(even) {
+  background-color: var(--treven);
+}
+tbody tr:nth-child(odd) {
+  background-color: var(--trodd);
+}
+tbody tr:nth-child(4) td:nth-child(3) {
+  background-color: var(--back2);
+  color: white;
+}
+tbody tr:nth-child(5) td:first-child {
+  font-style: italic;
+  white-space: nowrap;
+}
+@media only screen and (max-width: 420px) {
+  body {
+    font-size: 10pt;
+  }
+}
