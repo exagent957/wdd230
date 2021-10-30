@@ -55,7 +55,7 @@ tbody tr:nth-child(even) {
 tbody tr:nth-child(odd) {
   background-color: var(--trodd);
 }
-tbody tr:nth-child(4) td:nth-child(3) {
+#highlightgoal {
   background-color: var(--back2);
   color: white;
 }
