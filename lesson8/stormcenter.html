@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Marc Williamson" />
+    <meta
+      name="description"
+      content="Lesson 8 Storm Center Page build. Incorporates a form for users to report a weather event - by Marc Williamson, WDD 230: Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <title>Storm Center Page</title>
+    <link rel="shortcut icon" href="images/favicon-owl.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="images/owl.png" alt="weather site logo owl" />
+      <section class="header-center">
+        <h1 class="header-title">Weather In Southeastern Idaho</h1>
+        <h2 class="moto">The wise choice for weather and more</h2>
+      </section>
+      <button onclick="toggleMenu()" class="hamburger-button">
+        &#9776;<br /><span class="button-title">Menu</span>
+      </button>
+    </header>
+    <nav>
+      <ul id="primaryNav" class="hide">
+        <li><a href="#">Home</a></li>
+        <li><a href="preston-7.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery-7.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Storm Center Reporting</h2>
+      <picture>
+        <source srcset="#" media="(min-width: 650px) and (max-width: 1199px)" />
+        <source srcset="#" media="(min-width: 1200px)" />
+        <img class="storm-center-image" src="#" alt="Ominous weather image" />
+      </picture>
+      <form method="get" action="thanks.html">
+        <fieldset>
+          <legend>Storm Spotter Information</legend>
+          <label class="top"
+            >Full Name*
+            <input
+              type="text"
+              name="fullname"
+              id="fullname"
+              onblur="allAlphas()"
+              required
+            />
+          </label>
+          <label class="top">
+            Phone*
+            <input type="tel" name="phone" placeholder="1234445678" required />
+          </label>
+          <label class="top"
+            >Zip Code*
+            <input type="number" name="zip" placeholder="55555" required />
+          </label>
+          <label class="top"
+            >Email
+            <input
+              type="email"
+              name="email"
+              placeholder="myemail@service.com"
+            />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Storm Details</legend>
+          <label class="middle"
+            >Storm Date
+            <input
+              type="date"
+              name="storm-date"
+            />
+           <label class="middle">Weather Event
+             <input list="weather-events">
+             <datalist id="weather-events">
+              <option value="Flash Flood"></option>
+              <option value="Fire"></option>
+              <option value="Tornado"></option>
+              <option value="Hail"></option>
+              <option value="Severe Thunderstorm"></option>
+              <option value="High Wind"></option>
+             </datalist>
+           </label>
+
+           <label class="middle" class="slider-container">Storm Severity Range Slider
+             <p>Drag the storm severity slider. (1 least severe, 10 most severe)</p>
+             <input type="range" min="1" max="10" value="5" class="slider" id="slider-position">
+             <p>Severity: <span id="severity-number">5</span></p>
+           </label>
+          <label class="middle"
+            >Storm Region
+            <select name="storm-region">
+              <option selected disabled value="select-region" >Select Region</option>
+              <option value="preston">Preston</option>
+              <option value="soda-springs">Soda Springs</option>
+              <option value="fish-haven">Fish Haven</option>
+            </select>
+          </label>
+          <div>Are You In Danger?</div>
+          <label class="middle"
+            ><input
+              type="radio"
+              name="danger"
+              value="yes"
+            />Yes</label
+          >
+          <label class="middle"
+            ><input
+              type="radio"
+              name="danger"
+              value="no"
+            />No</label
+          >
+          <label class="middle"
+            ><input
+              type="radio"
+              name="danger"
+              value="maybe"
+            />Maybe</label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>Additional Information</legend>
+          <label class="bottom"
+            >Provide any additional information or comments<input type="textarea" name="additional-information"
+          /></label>
+        <label class="bottom">
+        <input
+          type="submit"
+          value="Report My Weather Event"
+          class="submitBtn"
+        />
+        </label>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <div class="map-contact-container">
+        <picture>
+          <source
+            srcset="images/seidaho-map400.jpg"
+            media="(min-width: 650px) and (max-width: 1199px)"
+          />
+          <source
+            srcset="images/seidaho-map600.jpg"
+            media="(min-width: 1200px)"
+          />
+          <img
+            class="footer-map"
+            src="images/seidaho-map200.jpg"
+            alt="Google satellite image of 
+          Southeast Idaho"
+          />
+        </picture>
+        <section class="contact-container">
+          <h3>Weather In Southeast Idaho</h3>
+          <p>
+            <span class="material-icons md-18">home</span>1800 Main St, Preston,
+            ID 00000
+          </p>
+          <p>
+            <span class="material-icons md-18">email</span>Contact@wiseid.info
+          </p>
+          <p><span class="material-icons md-18">phone</span>866-385-1234</p>
+        </section>
+      </div>
+      <div class="footer-bar">
+        <div class="socialmedia-container">
+          <a href="https://www.facebook.com"
+            ><img src="images/facebook.png" alt="Facebook logo"
+          /></a>
+          <a href="https://www.twitter.com"
+            ><img src="images/twitter.png" alt="Twitter logo"
+          /></a>
+          <a href="https://www.youtube.com"
+            ><img src="images/youtube.png" alt="YouTube logo"
+          /></a>
+          <a href="https://www.linkedin.com"
+            ><img src="images/linkedin.png" alt="LinkedIn logo"
+          /></a>
+        </div>
+        <p>
+          &copy; <span id="year"></span> Weather in Southeast Idaho wiseid.info
+          | <span id="current-date"></span>
+        </p>
+      </div>
+    </footer>
+    <script src="js/validateInput.js"></script>
+    <script src="js/slider-value.js"></script>
+    <script src="js/currentYear.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({ google: { families: ["PT Sans", "Noto Serif"] } });
+    </script>
+  </body>
+</html>
