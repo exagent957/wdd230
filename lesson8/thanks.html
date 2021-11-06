@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Marc Williamson" />
+    <meta
+      name="description"
+      content="Lesson 8 Storm Center Page build. Incorporates a form for users to report a weather event - by Marc Williamson, WDD 230: Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <title>Storm Center Page</title>
+    <link rel="shortcut icon" href="images/favicon-owl.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="images/owl.png" alt="weather site logo owl" />
+      <section class="header-center">
+        <h1 class="header-title">Weather In Southeastern Idaho</h1>
+        <h2 class="moto">The wise choice for weather and more</h2>
+      </section>
+      <button onclick="toggleMenu()" class="hamburger-button">
+        &#9776;<br /><span class="button-title">Menu</span>
+      </button>
+    </header>
+    <nav>
+      <ul id="primaryNav" class="hide">
+        <li><a href="#">Home</a></li>
+        <li><a href="preston-7.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery-7.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Thank you for alerting us about weather near you!</h2>
+    </main>
+    <footer>
+      <div class="map-contact-container">
+        <picture>
+          <source
+            srcset="images/seidaho-map400.jpg"
+            media="(min-width: 650px) and (max-width: 1199px)"
+          />
+          <source
+            srcset="images/seidaho-map600.jpg"
+            media="(min-width: 1200px)"
+          />
+          <img
+            class="footer-map"
+            src="images/seidaho-map200.jpg"
+            alt="Google satellite image of 
+          Southeast Idaho"
+          />
+        </picture>
+        <section class="contact-container">
+          <h3>Weather In Southeast Idaho</h3>
+          <p>
+            <span class="material-icons md-18">home</span>1800 Main St, Preston,
+            ID 00000
+          </p>
+          <p>
+            <span class="material-icons md-18">email</span>Contact@wiseid.info
+          </p>
+          <p><span class="material-icons md-18">phone</span>866-385-1234</p>
+        </section>
+      </div>
+      <div class="footer-bar">
+        <div class="socialmedia-container">
+          <a href="https://www.facebook.com"
+            ><img src="images/facebook.png" alt="Facebook logo"
+          /></a>
+          <a href="https://www.twitter.com"
+            ><img src="images/twitter.png" alt="Twitter logo"
+          /></a>
+          <a href="https://www.youtube.com"
+            ><img src="images/youtube.png" alt="YouTube logo"
+          /></a>
+          <a href="https://www.linkedin.com"
+            ><img src="images/linkedin.png" alt="LinkedIn logo"
+          /></a>
+        </div>
+        <p>
+          &copy; <span id="year"></span> Weather in Southeast Idaho wiseid.info
+          | <span id="current-date"></span>
+        </p>
+      </div>
+    </footer>
+    <script src="js/currentYear.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({ google: { families: ["PT Sans", "Noto Serif"] } });
+    </script>
+  </body>
+</html>

@@ -27,6 +27,20 @@
     text-align: center;
     padding: 0 0 0.5em 0;
   }
+  /*styling for storm center page*/
+  form legend {
+    font-size: 1.75rem;
+  }
+  form label,
+  form label input,
+  form label select,
+  div.danger p {
+    font-size: 1.6rem;
+  }
+  form input.submitBtn {
+    font-size: 1.8em;
+  }
+
   main,
   footer {
     max-width: 960px;

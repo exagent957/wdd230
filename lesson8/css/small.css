@@ -105,7 +105,109 @@ main h3 {
 .hero-image {
   width: 100%;
 }
-/*styling for gallery images*/
+/*styling for storm center page*/
+.storm-center-banner {
+  width: 100%;
+}
+.storm-center-banner-text {
+  color: #26aaf7;
+}
+/*----------- FORM STYLING --------------*/
+form fieldset {
+  margin: 0.5rem;
+  border: 1px solid #445ba9;
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+}
+form legend {
+  color: #3e54b8;
+  margin: 0 -0.75rem;
+  padding: 0 0.5rem;
+  font-size: 0.75rem;
+}
+form label {
+  display: block;
+  padding-top: 1rem;
+  color: #3e54b8;
+  font-size: 0.8rem;
+  text-align: left;
+  margin-bottom: 0.25rem;
+}
+form label input,
+form label select {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #3e54b8;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #555;
+  width: 90%;
+  max-width: 45rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 0.25rem;
+}
+form label.top input:required {
+  border: #fa9600 solid 1px;
+}
+form label.top input:required:valid {
+  border: #3e54b8 solid 1px;
+}
+/*styles for form slider bar*/
+form label p:last-child {
+  text-align: center;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+#severity-number {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+/*styles for form Are You In Danger*/
+div.danger label {
+  display: -webkit-box;
+  padding: 0;
+  margin: 0;
+  width: 10%;
+  line-height: 2rem;
+  align-items: center;
+}
+div.danger p {
+  margin: 0;
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: red;
+  font-weight: bolder;
+}
+div.danger label input {
+  height: 2em;
+  margin-right: 1rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+form label.bottom {
+  margin-top: -0.75rem;
+  margin-bottom: 2rem;
+}
+form textarea {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 3rem;
+  width: 100%;
+  white-space: pre-wrap;
+  border: #3e54b8 solid 1px;
+}
+form input.submitBtn {
+  border: none;
+  background-color: #fdd900;
+  color: black;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 41rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+/*styling for gallery page images*/
 .gallery-container {
   display: block;
 }
@@ -118,6 +220,7 @@ main h3 {
   text-align: center;
   line-height: 1em;
 }
+/*back to general styling for multiple pages*/
 .weather-summary {
   width: 34%;
   position: relative;

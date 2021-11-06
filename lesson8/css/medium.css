@@ -29,6 +29,21 @@
   .gallery-image-text {
     font-size: 0.9em;
   }
+  /*styling for storm center page*/
+  form legend {
+    font-size: 1.25rem;
+  }
+  form label,
+  form label input,
+  form label select,
+  div.danger p {
+    font-size: 1.3rem;
+  }
+  form input.submitBtn {
+    height: 5rem;
+    font-size: 1.5em;
+  }
+
   .image footer {
     font-size: 12pt;
   }
