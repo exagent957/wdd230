@@ -1,0 +1,82 @@
+/*styling for small view*/
+body {
+  background-color: black;
+  justify-items: center;
+  align-content: center;
+}
+header {
+  width: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(14, 237, 223, 1) 22%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  text-align: center;
+  padding: 0.25rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  padding-bottom: 0.3rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  background-color: lightgray;
+  border: solid 2px red;
+  margin-top: 0.3em;
+  margin-bottom: 0.6em;
+  margin-left: 1rem;
+  max-width: 90%;
+  align-items: center;
+}
+p {
+  text-align: center;
+  margin-top: -1rem;
+}
+img {
+  width: 81%;
+  height: 100%;
+}
+footer {
+  background-color: rgba(2, 0, 36, 1);
+  color: white;
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 1.5rem;
+}
+
+/*medium view*/
+@media only screen and (min-width: 32.5em) {
+  div.cards {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  section {
+    margin-right: 1.5rem;
+  }
+  footer {
+    font-size: 0.9em;
+  }
+}
+/*large view*/
+@media only screen and (min-width: 60em) {
+  div.cards {
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  section {
+    margin-left: 2rem;
+    margin-right: 0.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
