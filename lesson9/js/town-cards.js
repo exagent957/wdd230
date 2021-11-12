@@ -25,6 +25,8 @@ fetch(requestURL)
         let currentPopulation = document.createElement("p");
         let averageRainfall = document.createElement("p");
         let image = document.createElement("img");
+        let townOrder = document.createElement("p");
+
         townName.textContent = `${towns.name}`;
         townCard.appendChild(townName);
         motto.textContent = `${towns.motto}`;
@@ -38,11 +40,18 @@ fetch(requestURL)
         image.setAttribute("src", `images/${towns.photo}`);
         image.setAttribute("alt", `Photo of ${towns.name}`);
         townCard.appendChild(image);
+        //assigning a townOrder to each town for displaying in desired order
         if (towns.name === "Preston") {
-          document
-            .querySelector("div.home-town-cards.card1")
-            .appendChild(townCard);
+          townOrder.textContent = 1;
+          townCard.appendChild(townOrder);
+        } else if (towns.name === "Soda Springs") {
+          townOrder.textContent = 2;
+          townCard.appendChild(townOrder);
+        } else {
+          townOrder.textContent = 3;
+          townCard.appendChild(townOrder);
         }
+        document.querySelector("div.home-town-cards").appendChild(townCard);
       }
     });
   });
