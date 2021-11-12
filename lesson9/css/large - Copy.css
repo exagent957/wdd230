@@ -1,0 +1,52 @@
+/*large view*/
+@media only screen and (min-width: 60em) {
+  body {
+    font-size: 16pt;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  nav ul li a {
+    font-size: 1.5rem;
+  }
+  .logo {
+    width: 120px;
+  }
+  /*styling for gallery images - 3 columns in large media query*/
+  .gallery-container {
+    width: 960px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .gallery-image-container:hover {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  .gallery-image-text {
+    font-size: 0.7em;
+    text-align: center;
+    padding: 0 0 0.5em 0;
+  }
+  /*styling for storm center page*/
+  form legend {
+    font-size: 1.75rem;
+  }
+  form label,
+  form label input,
+  form label select,
+  div.danger p {
+    font-size: 1.6rem;
+  }
+  form input.submitBtn {
+    font-size: 1.8em;
+  }
+
+  main,
+  footer {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .contact-container {
+    font-size: 1.5em;
+  }
+}
