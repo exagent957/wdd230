@@ -239,7 +239,20 @@ footer p {
 .home-town-info-container {
   margin: 0 2%;
 }
-
+/*styling for home page town cards*/
+.home-town-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#town1 {
+  grid-row-start: 1;
+}
+#town2 {
+  grid-row-start: 2;
+}
+#town3 {
+  grid-row-start: 3;
+}
 /*Preston Page*/
 /*styling for Preston Page pop-up banner*/
 body #banner.hide {
