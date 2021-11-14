@@ -12,6 +12,43 @@
   .logo {
     width: 120px;
   }
+  /*styling for home page town cards*/
+  #town1,
+  #town3 {
+    padding: 0;
+  }
+  div.home-town-cards section {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  div.home-town-cards section#town2 .town-text-area {
+    grid-column: 2;
+    grid-row: 1;
+    position: unset;
+  }
+  div.home-town-cards section#town2 img {
+    grid-column: 2;
+    grid-row: 2;
+    padding-left: 0;
+    position: unset;
+  }
+  #town1 .town-text-area {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  #town1 img {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  #town3 .town-text-area {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  #town3 img {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
   /*styling for gallery images - 3 columns in large media query*/
   .gallery-container {
     width: 960px;

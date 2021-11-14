@@ -11,7 +11,6 @@ fetch(requestURL)
 
     //store the results of the converted response into an array since the data source is a neatly packed array of records named "towns".
     const towns = jsonObject["towns"];
-    let town = ["Preston", "Soda Springs", "Fish Haven"];
 
     //loop through every record and process them into their own 'town cards' (HTML output), one at a time
     towns.forEach((towns) => {
@@ -41,7 +40,7 @@ fetch(requestURL)
         townTextArea.appendChild(currentPopulation);
         averageRainfall.textContent = `Average Rainfall: ${towns.averageRainfall}`;
         townTextArea.appendChild(averageRainfall);
-        document.querySelector("div.town-text-area").appendChild(townTextArea);
+        townCard.appendChild(townTextArea);
         image.setAttribute("src", `images/${towns.photo}`);
         image.setAttribute("alt", `Photo of ${towns.name}`);
         townCard.appendChild(image);
@@ -56,7 +55,7 @@ fetch(requestURL)
           townCard.setAttribute("id", "town3");
           townCard.appendChild(townOrder);
         }
-
+        console.log(townTextArea);
         document.querySelector("div.home-town-cards").appendChild(townCard);
       }
     });

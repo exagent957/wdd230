@@ -4,7 +4,7 @@ body {
   margin: 0 auto;
   background-color: rgb(255, 255, 248);
   font-family: "PT Sans";
-  font-size: 7pt;
+  font-size: 8pt;
 }
 
 header {
@@ -257,8 +257,8 @@ div.home-town-cards section {
   background-color: #9c5126;
   color: #ffff;
   text-align: center;
-  font-size: 0.6rem;
   padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 div.home-town-cards section p {

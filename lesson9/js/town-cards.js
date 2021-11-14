@@ -11,7 +11,6 @@ fetch(requestURL)
 
     //store the results of the converted response into an array since the data source is a neatly packed array of records named "towns".
     const towns = jsonObject["towns"];
-    let town = ["Preston", "Soda Springs", "Fish Haven"];
 
     //loop through every record and process them into their own 'town cards' (HTML output), one at a time
     towns.forEach((towns) => {
@@ -21,37 +20,36 @@ fetch(requestURL)
         towns.name === "Fish Haven"
       ) {
         let townCard = document.createElement("section");
+        let townTextArea = document.createElement("div");
         let townName = document.createElement("h2");
         let motto = document.createElement("p");
         let yearFounded = document.createElement("p");
         let currentPopulation = document.createElement("p");
         let averageRainfall = document.createElement("p");
         let image = document.createElement("img");
-        let townOrder = document.createElement("p");
 
+        townTextArea.setAttribute("class", "town-text-area");
         townName.textContent = `${towns.name}`;
-        townCard.appendChild(townName);
+        townTextArea.appendChild(townName);
         motto.innerHTML = `<em>"${towns.motto}"</em>`;
-        townCard.appendChild(motto);
+        townTextArea.appendChild(motto);
         yearFounded.textContent = `Year Founded: ${towns.yearFounded}`;
-        townCard.appendChild(yearFounded);
+        townTextArea.appendChild(yearFounded);
         currentPopulation.textContent = `Population: ${towns.currentPopulation}`;
-        townCard.appendChild(currentPopulation);
+        townTextArea.appendChild(currentPopulation);
         averageRainfall.textContent = `Average Rainfall: ${towns.averageRainfall}`;
-        townCard.appendChild(averageRainfall);
+        townTextArea.appendChild(averageRainfall);
+        townCard.appendChild(townTextArea);
         image.setAttribute("src", `images/${towns.photo}`);
         image.setAttribute("alt", `Photo of ${towns.name}`);
         townCard.appendChild(image);
         //assigning an id to each townCardfor displaying in desired order
         if (towns.name === "Preston") {
           townCard.setAttribute("id", "town1");
-          townCard.appendChild(townOrder);
         } else if (towns.name === "Soda Springs") {
           townCard.setAttribute("id", "town2");
-          townCard.appendChild(townOrder);
         } else {
           townCard.setAttribute("id", "town3");
-          townCard.appendChild(townOrder);
         }
         document.querySelector("div.home-town-cards").appendChild(townCard);
       }

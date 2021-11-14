@@ -2,6 +2,7 @@
 @media only screen and (min-width: 32.5em) {
   body {
     margin: auto;
+    max-width: 100%;
     font-size: 14pt;
   }
   header .hamburger-button {
@@ -32,30 +33,25 @@
   }
   /*styling for home town card lay out*/
   div.home-town-cards section {
-    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
-  div.home-town-cards section img {
-    width: 45%;
-    padding-left: 4%;
-    float: left;
+  div.home-town-cards section#town2 .town-text-area {
+    grid-column: 2;
+    position: relative;
+    top: 6rem;
   }
   div.home-town-cards section#town2 img {
-    width: 45%;
-    padding-right: 4%;
-    float: right;
-  }
-  div.home-town-cards section h2,
-  div.home-town-cards section p {
+    grid-column: 1;
+    padding-left: 2rem;
     position: relative;
-    top: 11rem;
-    left: 8rem;
-    font-size: 0.9rem;
+    bottom: 4rem;
   }
-  div.home-town-cards section#town2 h2,
-  div.home-town-cards section#town2 p {
-    position: relative;
-    top: 11rem;
-    left: -10rem;
+  div.home-town-cards section#town2 p em {
+    line-height: 1rem;
+  }
+  div.home-town-cards section#town2 {
+    padding: 0;
   }
   /*styling for gallery images - 2 columns in medium media query*/
   .gallery-container {
