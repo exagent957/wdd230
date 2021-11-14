@@ -31,14 +31,14 @@ fetch(requestURL)
 
         townName.textContent = `${towns.name}`;
         townCard.appendChild(townName);
-        motto.textContent = `${towns.motto}`;
+        motto.innerHTML = `<em>"${towns.motto}"</em>`;
         townCard.appendChild(motto);
         yearFounded.textContent = `Year Founded: ${towns.yearFounded}`;
         townCard.appendChild(yearFounded);
         currentPopulation.textContent = `Population: ${towns.currentPopulation}`;
         townCard.appendChild(currentPopulation);
         averageRainfall.textContent = `Average Rainfall: ${towns.averageRainfall}`;
-        townCard.appendChild(currentPopulation);
+        townCard.appendChild(averageRainfall);
         image.setAttribute("src", `images/${towns.photo}`);
         image.setAttribute("alt", `Photo of ${towns.name}`);
         townCard.appendChild(image);

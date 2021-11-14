@@ -1,7 +1,7 @@
 /*small view - styles start here and progress to larger viewports*/
 body {
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
   background-color: rgb(255, 255, 248);
   font-family: "PT Sans";
   font-size: 7pt;
@@ -231,7 +231,7 @@ footer p {
 }
 /*styling for home page mission statement*/
 .mission-statement {
-  margin-top: -3rem;
+  margin-top: -2.5rem;
 }
 .mission-statement p {
   margin-top: -0.4rem;
@@ -252,6 +252,21 @@ footer p {
 }
 #town3 {
   grid-row-start: 3;
+}
+div.home-town-cards section {
+  background-color: #9c5126;
+  color: #ffff;
+  text-align: center;
+  font-size: 0.6rem;
+  padding-bottom: 2rem;
+}
+
+div.home-town-cards section p {
+  line-height: 0.4rem;
+  text-align: center;
+}
+div.home-town-cards section img {
+  width: 90%;
 }
 /*Preston Page*/
 /*styling for Preston Page pop-up banner*/

@@ -21,6 +21,7 @@ fetch(requestURL)
         towns.name === "Fish Haven"
       ) {
         let townCard = document.createElement("section");
+        let townTextArea = document.createElement("div");
         let townName = document.createElement("h2");
         let motto = document.createElement("p");
         let yearFounded = document.createElement("p");
@@ -29,16 +30,18 @@ fetch(requestURL)
         let image = document.createElement("img");
         let townOrder = document.createElement("p");
 
+        townTextArea.setAttribute("class", "town-text-area");
         townName.textContent = `${towns.name}`;
-        townCard.appendChild(townName);
-        motto.textContent = `${towns.motto}`;
-        townCard.appendChild(motto);
+        townTextArea.appendChild(townName);
+        motto.innerHTML = `<em>"${towns.motto}"</em>`;
+        townTextArea.appendChild(motto);
         yearFounded.textContent = `Year Founded: ${towns.yearFounded}`;
-        townCard.appendChild(yearFounded);
+        townTextArea.appendChild(yearFounded);
         currentPopulation.textContent = `Population: ${towns.currentPopulation}`;
-        townCard.appendChild(currentPopulation);
+        townTextArea.appendChild(currentPopulation);
         averageRainfall.textContent = `Average Rainfall: ${towns.averageRainfall}`;
-        townCard.appendChild(currentPopulation);
+        townTextArea.appendChild(averageRainfall);
+        document.querySelector("div.town-text-area").appendChild(townTextArea);
         image.setAttribute("src", `images/${towns.photo}`);
         image.setAttribute("alt", `Photo of ${towns.name}`);
         townCard.appendChild(image);
@@ -53,6 +56,7 @@ fetch(requestURL)
           townCard.setAttribute("id", "town3");
           townCard.appendChild(townOrder);
         }
+
         document.querySelector("div.home-town-cards").appendChild(townCard);
       }
     });
