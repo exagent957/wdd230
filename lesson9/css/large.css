@@ -13,20 +13,55 @@
     width: 120px;
   }
   /*styling for home page town cards*/
-  #town1,
-  #town3 {
+  div.home-town-cards section {
     padding: 0;
   }
-  div.home-town-cards section {
+  div.home-town-cards section#town2 .town-text-area {
+    grid-column: unset;
+    position: unset;
+    top: 0rem;
+    font-size: 0.9rem;
+  }
+  div.home-town-cards section#town2 img {
+    margin-top: -0.2rem;
+    grid-column: unset;
+    padding-left: 0;
+    position: unset;
+    bottom: 0rem;
+    padding-bottom: 0.7rem;
+  }
+  div.home-town-cards {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  div.home-town-cards section#town2 .town-text-area {
+  #town1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  #town2 {
     grid-column: 2;
+    grid-row: 1;
+  }
+
+  #town3 {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  div.home-town-cards section {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  /*   div.home-town-cards section img {
+    max-width: 100%;
+  }
+  div.home-town-cards section#town2 .town-text-area {
+    grid-column: 2 / 3;
     grid-row: 1;
     position: unset;
   }
   div.home-town-cards section#town2 img {
-    grid-column: 2;
+    grid-column: 2 / 3;
     grid-row: 2;
     padding-left: 0;
     position: unset;
@@ -36,18 +71,18 @@
     grid-row: 1;
   }
   #town1 img {
-    grid-column: 1;
+    grid-column: 1 / 2;
     grid-row: 2;
   }
 
   #town3 .town-text-area {
-    grid-column: 3;
+    grid-column: 3 / 4;
     grid-row: 1;
   }
   #town3 img {
-    grid-column: 3;
+    grid-column: 3 / 4;
     grid-row: 2;
-  }
+  } */
 
   /*styling for gallery images - 3 columns in large media query*/
   .gallery-container {

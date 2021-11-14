@@ -248,7 +248,7 @@ footer p {
   grid-row-start: 1;
 }
 #town2 {
-  grid-row-start: 2;
+  grid-row: 2;
 }
 #town3 {
   grid-row-start: 3;
@@ -257,8 +257,10 @@ div.home-town-cards section {
   background-color: #9c5126;
   color: #ffff;
   text-align: center;
-  padding-bottom: 2rem;
   padding-top: 2rem;
+}
+div.home-town-cards section#town3 {
+  padding-bottom: 2rem;
 }
 
 div.home-town-cards section p {
