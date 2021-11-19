@@ -104,7 +104,7 @@ main h3 {
   background-color: #f9f8f7ad;
   box-shadow: 0 4px 8px 0 rgba(206, 120, 120, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 1em;
+  padding: 1em 2em;
 }
 .weather-summary h3 {
   margin: 0;
@@ -113,11 +113,15 @@ main h3 {
   font-weight: bolder;
   line-height: 0.75em;
   padding-right: 2em;
+  padding-left: 0;
+  align-items: center;
+  justify-content: center;
 }
 .weather-summary li {
   display: block;
   font-weight: bolder;
   line-height: 100%;
+  white-space: nowrap;
 }
 .five-day-forecast {
   display: grid;
@@ -203,7 +207,12 @@ footer p {
 .socialmedia-container a:hover {
   background-color: white;
 }
-
+.attributions:visited {
+  color: #ffff;
+}
+.attributions:hover {
+  color: #fdd900;
+}
 /*Home Page*/
 /*styling for home page call to action in banner*/
 .call-to-action {

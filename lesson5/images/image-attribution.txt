@@ -2,7 +2,7 @@ Photo by <a href="https://unsplash.com/@rmilrad?utm_source=unsplash&utm_medium=r
   
 Description - brown wooden house on bright sunny day in field of yellow flowers - looks like it could be idaho-preston area.
 
-googlemap attribution for screenshot of se Idaho
+Googlemap attribution for screenshot of map of SE Idaho
 https://www.google.com/maps/@42.3363436,-111.3800033,79467m/data=!3m1!1e3
 
 Description - Preston High School Marching Band. 
@@ -16,7 +16,7 @@ Description: Weather icons. I decided that i can publish these icons for free.
 You can download package that contains .png and .sketch files
 https://dribbble.com/shots/2531876-Weather-Icons-sketch
 
-Description: phot of microburst - weather - unsplash - NOAA
+Description: photo of microburst - weather - unsplash - NOAA
 Unsplash grants you an irrevocable, nonexclusive, worldwide copyright license to download, copy, modify, distribute, perform, and use photos from Unsplash for free, including for commercial purposes, without permission from or attributing the photographer or Unsplash. This license does not include the right to compile photos from Unsplash to replicate a similar or competing service.
 https://unsplash.com/photos/Led9c1SSNFo
 
@@ -53,7 +53,8 @@ https://unsplash.com/photos/ST8P_fJj7cY
 Description: forest rocks mountains - unsplash free Porter Raab
 https://unsplash.com/photos/l3VXl5QcocM
 
-
+Description: API Weather Source
+https://openweathermap.org/
 
 
 

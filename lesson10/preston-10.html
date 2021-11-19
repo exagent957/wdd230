@@ -69,36 +69,41 @@
       <section class="weather-summary">
         <h3>Weather Summary</h3>
         <ul>
-          <li>Currently: <span id="currently">Sunny</span></li>
-          <li>Temperature: <span id="temperature">35</span>&#8457;</li>
+          <li>Currently: <span id="currently"></span></li>
+          <li>Temperature: <span id="temperature"></span>&#8457;</li>
           <li id="wind-chill-descriptor">
-            Wind Chill: <span id="wind-chill">76</span>&#8457;
+            Wind Chill: <span id="wind-chill"></span>&#8457;
           </li>
-          <li>Humidity: <span id="humidity">58</span>%</li>
-          <li>Wind Speed: <span id="wind-speed">5</span>mph</li>
+          <li>Humidity: <span id="humidity"></span>%</li>
+          <li>Wind Speed: <span id="wind-speed"></span>mph</li>
         </ul>
       </section>
       <div class="five-day-forecast">
         <figure>
-          <img src="images/Sunny.png" alt="Sunny day" />
-          <figcaption>SUN 76&#8457;</figcaption>
-        </figure>
+          <figcaption><span id="forecast-day0"></span></figcaption>
+          <img src="" alt="" id="forecast-icon0" />
+          <figcaption><span id="forecast-temp0"></figcaption>
+         </figure>
         <figure>
-          <img src="images/Sunny.png" alt="Sunny day" />
-          <figcaption>MON 76&#8457;</figcaption>
-        </figure>
+          <figcaption><span id="forecast-day1"></span></figcaption>
+          <img src="" alt="" id="forecast-icon1" />
+          <figcaption><span id="forecast-temp1"></figcaption>
+         </figure>
         <figure>
-          <img src="images/Sunny.png" alt="Sunny day" />
-          <figcaption>TUES 76&#8457;</figcaption>
-        </figure>
+          <figcaption><span id="forecast-day2"></span></figcaption>
+          <img src="" alt="" id="forecast-icon2" />
+          <figcaption><span id="forecast-temp2"></figcaption>
+         </figure>
         <figure>
-          <img src="images/Sunny.png" alt="Sunny day" />
-          <figcaption>WED 76&#8457;</figcaption>
-        </figure>
+          <figcaption><span id="forecast-day3"></span></figcaption>
+          <img src="" alt="" id="forecast-icon3" />
+          <figcaption><span id="forecast-temp3"></figcaption>
+         </figure>
         <figure>
-          <img src="images/Sunny.png" alt="Sunny day" />
-          <figcaption>THUR 76&#8457;</figcaption>
-        </figure>
+          <figcaption><span id="forecast-day4"></span></figcaption>
+          <img src="" alt="" id="forecast-icon4" />
+          <figcaption><span id="forecast-temp4"></figcaption>
+         </figure>
       </div>
       <section class="article-container">
         <h3>
@@ -188,15 +193,21 @@
           /></a>
         </div>
         <p>
-          &copy; <span id="year"></span> Weather in Southeast Idaho wiseid.info
-          | <span id="current-date"></span>
+          &copy; <span id="year"></span> wiseid.info |
+          <span id="current-date"></span> |
+          <span
+            ><a class="attributions" target="_blank" href="attributions.html"
+              >Attributions</a
+            ></span
+          >
         </p>
       </div>
     </footer>
+    <script src="js/prestonweathersummary.js"></script>
+    <script src="js/prestonforecast.js"></script>
     <script src="js/currentYear.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/toggleBanner.js"></script>
-    <script src="js/windChill.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
       WebFont.load({ google: { families: ["PT Sans", "Noto Serif"] } });
