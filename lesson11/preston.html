@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Marc Williamson" />
+    <meta
+      name="description"
+      content="Preston Idaho Town Page for weather and events. Live weather and 5 day forecast. WDD 230: Web Frontend Development at Brigham Young University - Idaho - Fall 2021"
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <title>Preston Town Page</title>
+    <link rel="shortcut icon" href="images/favicon-owl.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <div id="banner" class="hide">
+      <p>
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. at the city park
+        pavilion.
+      </p>
+    </div>
+    <header>
+      <img class="logo" src="images/owl.png" alt="weather site logo owl" />
+      <section class="header-center">
+        <h1 class="header-title">Weather In Southeastern Idaho</h1>
+        <h2 class="moto">The wise choice for weather and more</h2>
+      </section>
+      <button onclick="toggleMenu()" class="hamburger-button">
+        &#9776;<br /><span class="button-title">Menu</span>
+      </button>
+    </header>
+    <nav>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="preston.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Preston Idaho</h2>
+      <picture>
+        <source
+          srcset="images/preston-hero-image800.jpg"
+          media="(min-width: 650px) and (max-width: 1199px)"
+        />
+        <source
+          srcset="images/preston-hero-image1020.jpg"
+          media="(min-width: 1200px)"
+        />
+        <img
+          class="hero-image"
+          src="images/preston-hero-image400.jpg"
+          alt="Open field with flowers and barn in Preston"
+        />
+      </picture>
+      <section class="weather-summary">
+        <h3>Weather Summary</h3>
+        <ul>
+          <li>Currently: <span id="currently"></span></li>
+          <li>Temperature: <span id="temperature"></span>&#8457;</li>
+          <li id="wind-chill-descriptor">
+            Wind Chill: <span id="wind-chill"></span>&#8457;
+          </li>
+          <li>Humidity: <span id="humidity"></span>%</li>
+          <li>Wind Speed: <span id="wind-speed"></span> mph</li>
+        </ul>
+      </section>
+      <div class="five-day-forecast">
+        <figure>
+          <div class="five-day-forecast-day">
+            <span id="forecast-day0"></span>
+          </div>
+          <img src="#" alt="#" id="forecast-icon0" />
+          <figcaption><span id="forecast-temp0"></span></figcaption>
+        </figure>
+        <figure>
+          <div class="five-day-forecast-day">
+            <span id="forecast-day1"></span>
+          </div>
+          <img src="#" alt="#" id="forecast-icon1" />
+          <figcaption><span id="forecast-temp1"></span></figcaption>
+        </figure>
+        <figure>
+          <div class="five-day-forecast-day">
+            <span id="forecast-day2"></span>
+          </div>
+          <img src="#" alt="#" id="forecast-icon2" />
+          <figcaption><span id="forecast-temp2"></span></figcaption>
+        </figure>
+        <figure>
+          <div class="five-day-forecast-day">
+            <span id="forecast-day3"></span>
+          </div>
+          <img src="#" alt="#" id="forecast-icon3" />
+          <figcaption><span id="forecast-temp3"></span></figcaption>
+        </figure>
+        <figure>
+          <div class="five-day-forecast-day">
+            <span id="forecast-day4"></span>
+          </div>
+          <img src="#" alt="#" id="forecast-icon4" />
+          <figcaption><span id="forecast-temp4"></span></figcaption>
+        </figure>
+      </div>
+      <section class="article-container">
+        <h3>
+          PHS marching band takes top places <br />
+          - Herald Journal 10/13/2021
+        </h3>
+        <p>
+          It was a cold wet morning as the Preston High School marching band
+          boarded the bus to attend the Bridgeland Band Invitational at USU’s
+          Maverik Stadium in Logan on Oct. 9. <br />
+          <br />
+          The Indians were the first to perform at 8:45 a.m. and the rain
+          continued to pour down throughout their routine. <br />
+          <br />
+          Their long hours of practice and hard work paid off with a third place
+          overall finish in their division. Percussion placed second, and music
+          ensemble placed first. <br />
+          <br />
+          Of 43 schools, nine from Idaho, from 3A to 6A in size, Preston was
+          34th, ranking higher than Century, Madison and other Idaho schools.
+          The rain let up during the 1:30 p.m. 3A and 5A awards ceremony and
+          more spectators filled the stands. <br />
+          <br />
+          “I’m happy with our performance, but our percussion was half a point
+          off from taking first, and our band was four points off from taking
+          first place in our division,” said drum major Luis Herring who
+          choreographed the routine. “These are small things in practice that we
+          can improve on, that we should improve on. So, I am confident that we
+          will definitely do better this next week.” <br />
+          <br />
+          Preston performs at 2 p.m. on Saturday, Oct. 16, at Highland High
+          school in Pocatello at the Mountain West Invitational. <br />
+          <span class="article-attribution"
+            >Article and photgraph by Teresa Chipman, Herald-Journal.</span
+          >
+        </p>
+        <img
+          class="article-image"
+          src="images/phs-marching-band.jpg"
+          alt="Preston High School Marching Band"
+        />
+      </section>
+    </main>
+    <footer>
+      <div class="map-contact-container">
+        <picture>
+          <source
+            srcset="images/preston-map600.jpg"
+            media="(min-width: 650px) and (max-width: 1199px)"
+          />
+          <source
+            srcset="images/preston-map900.jpg"
+            media="(min-width: 1200px)"
+          />
+          <img
+            class="footer-map"
+            src="images/preston-map300.jpg"
+            alt="Google satellite image of 
+          Preston"
+          />
+        </picture>
+        <section class="contact-container">
+          <h3>Weather In Southeast Idaho</h3>
+          <p>
+            <span class="material-icons md-18">home</span>1800 Main St, Preston,
+            ID 00000
+          </p>
+          <p>
+            <span class="material-icons md-18">email</span>Contact@wiseid.info
+          </p>
+          <p><span class="material-icons md-18">phone</span>866-385-1234</p>
+        </section>
+      </div>
+      <div class="footer-bar">
+        <div class="socialmedia-container">
+          <a href="https://www.facebook.com"
+            ><img src="images/facebook.png" alt="Facebook logo"
+          /></a>
+          <a href="https://www.twitter.com"
+            ><img src="images/twitter.png" alt="Twitter logo"
+          /></a>
+          <a href="https://www.youtube.com"
+            ><img src="images/youtube.png" alt="YouTube logo"
+          /></a>
+          <a href="https://www.linkedin.com"
+            ><img src="images/linkedin.png" alt="LinkedIn logo"
+          /></a>
+        </div>
+        <p>
+          &copy; <span id="year"></span> wiseid.info |
+          <span id="current-date"></span> |
+          <span
+            ><a class="attributions" target="_blank" href="attributions.html"
+              >Attributions</a
+            ></span
+          >
+        </p>
+      </div>
+    </footer>
+    <script src="js/prestonweathersummary.js"></script>
+    <script src="js/prestonforecast.js"></script>
+    <script src="js/currentYear.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/toggleBanner.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({ google: { families: ["PT Sans", "Noto Serif"] } });
+    </script>
+  </body>
+</html>

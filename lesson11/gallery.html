@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Marc Williamson" />
+    <meta
+      name="description"
+      content="Responsive image gallery for users to contribute weather images - WDD 230: Web Frontend Development at Brigham Young University - Idaho - Fall 2021"
+    />
+    <title>Weather Gallery</title>
+    <link rel="shortcut icon" href="images/favicon-owl.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="images/owl.png" alt="weather site logo owl" />
+      <section class="header-center">
+        <h1 class="header-title">Weather In Southeastern Idaho</h1>
+        <h2 class="moto">The wise choice for weather and more</h2>
+      </section>
+      <button onclick="toggleMenu()" class="hamburger-button">
+        &#9776;<br /><span class="button-title">Menu</span>
+      </button>
+    </header>
+    <nav>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li class="active"><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Local Weather Gallery</h2>
+      <h3>Send us your favorite weather pictures</h3>
+      <h4>
+        Days since your last visit to our gallery:
+        <span id="daysPassed"> </span>
+      </h4>
+      <div class="gallery-container">
+        <figure class="gallery-image-container">
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/buildingtstorm.jpg"
+            alt="Building thunderstorm near Whitney"
+          />
+          <figcaption class="gallery-image-text">
+            Building thunderstorm near Whitney
+          </figcaption>
+        </figure>
+        <figure class="gallery-image-container">
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/lakesunset315.jpg"
+            alt="Vibrant sunset over Bear Lake"
+          />
+          <figcaption class="gallery-image-text">
+            Vibrant sunset over Bear Lake
+          </figcaption>
+        </figure>
+        <figure class="gallery-image-container">
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/lightningonroad.jpg"
+            alt="Lightning on road"
+          />
+          <figcaption class="gallery-image-text">Lightning on road</figcaption>
+        </figure>
+        <figure class="gallery-image-container">
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/lakecloudsrocksduck.jpg"
+            alt="Cloudy sunset over Bear Lake"
+          />
+          <figcaption class="gallery-image-text">
+            Cloudy sunset over Bear Lake
+          </figcaption>
+        </figure>
+        <figure class="gallery-image-container">
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/microburst.jpg"
+            alt="Microburst storm near Thatcher"
+          />
+          <figcaption class="gallery-image-text">
+            Microburst storm near Thatcher
+          </figcaption>
+        </figure>
+        <figure class="gallery-image-container">
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/nightlightning.jpg"
+            alt="Night lightning near St Charles"
+          />
+          <figcaption class="gallery-image-text">
+            Night lightning near St Charles
+          </figcaption>
+        </figure>
+        <figure class="gallery-image-container">
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/stormtrackers.jpg"
+            alt="NOAA storm tracking team near Grace"
+          />
+          <figcaption class="gallery-image-text">
+            NOAA storm tracking team near Grace
+          </figcaption>
+        </figure>
+        <figure class="gallery-image-container">
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/summertstormhills.jpg"
+            alt="Summer thunderstorm in hills"
+          />
+          <figcaption class="gallery-image-text">
+            Summer thunderstorm in hills near Paris
+          </figcaption>
+        </figure>
+        <figure class="gallery-image-container">
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/windsweptorangecloud.jpg"
+            alt="Windswept orange cloud"
+          />
+          <figcaption class="gallery-image-text">
+            Windswept orange cloud near Franklin
+          </figcaption>
+        </figure>
+      </div>
+    </main>
+    <footer>
+      <div class="map-contact-container">
+        <picture>
+          <source
+            srcset="images/seidaho-map400.jpg"
+            media="(min-width: 650px) and (max-width: 1199px)"
+          />
+          <source
+            srcset="images/seidaho-map600.jpg"
+            media="(min-width: 1200px)"
+          />
+          <img
+            class="footer-map"
+            src="images/seidaho-map200.jpg"
+            alt="Google satellite image of 
+          Southeast Idaho"
+          />
+        </picture>
+        <section class="contact-container">
+          <h3>Weather In Southeast Idaho</h3>
+          <p>
+            <span class="material-icons md-18">home</span>1800 Main St, Preston,
+            ID 00000
+          </p>
+          <p>
+            <span class="material-icons md-18">email</span>Contact@wiseid.info
+          </p>
+          <p><span class="material-icons md-18">phone</span>866-385-1234</p>
+        </section>
+      </div>
+      <div class="footer-bar">
+        <div class="socialmedia-container">
+          <a href="https://www.facebook.com"
+            ><img src="images/facebook.png" alt="Facebook logo"
+          /></a>
+          <a href="https://www.twitter.com"
+            ><img src="images/twitter.png" alt="Twitter logo"
+          /></a>
+          <a href="https://www.youtube.com"
+            ><img src="images/youtube.png" alt="YouTube logo"
+          /></a>
+          <a href="https://www.linkedin.com"
+            ><img src="images/linkedin.png" alt="LinkedIn logo"
+          /></a>
+        </div>
+        <p>
+          &copy; <span id="year"></span> wiseid.info |
+          <span id="current-date"></span> |
+          <span
+            ><a class="attributions" target="_blank" href="attributions.html"
+              >Attributions</a
+            ></span
+          >
+        </p>
+      </div>
+    </footer>
+    <script src="js/currentYear.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/gallery-lazyloader.js" defer></script>
+    <script src="js/localstorage.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({ google: { families: ["PT Sans", "Noto Serif"] } });
+    </script>
+  </body>
+</html>
