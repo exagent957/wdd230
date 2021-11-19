@@ -52,38 +52,16 @@
     align-items: center;
     justify-content: center;
   }
-  /*   div.home-town-cards section img {
-    max-width: 100%;
-  }
-  div.home-town-cards section#town2 .town-text-area {
-    grid-column: 2 / 3;
-    grid-row: 1;
-    position: unset;
-  }
-  div.home-town-cards section#town2 img {
-    grid-column: 2 / 3;
-    grid-row: 2;
-    padding-left: 0;
-    position: unset;
-  }
-  #town1 .town-text-area {
-    grid-column: 1;
-    grid-row: 1;
-  }
-  #town1 img {
-    grid-column: 1 / 2;
-    grid-row: 2;
+
+  /*styling for 5 day forecast*/
+  .five-day-forecast {
+    margin-top: 1.4rem;
+    top: -14em;
   }
 
-  #town3 .town-text-area {
-    grid-column: 3 / 4;
-    grid-row: 1;
+  .article-container {
+    margin-top: -8em;
   }
-  #town3 img {
-    grid-column: 3 / 4;
-    grid-row: 2;
-  } */
-
   /*styling for gallery images - 3 columns in large media query*/
   .gallery-container {
     width: 960px;

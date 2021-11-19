@@ -5,7 +5,7 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
     document.querySelector("#currently").textContent =
-      jsObject.weather[0].description;
+      jsObject.weather[0].description.toUpperCase();
 
     const temperature = jsObject.main.temp.toFixed(1);
     document.querySelector("#temperature").textContent = temperature;

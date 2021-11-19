@@ -120,15 +120,15 @@ main h3 {
 .weather-summary li {
   display: block;
   font-weight: bolder;
-  line-height: 100%;
+  line-height: 0.9rem;
   white-space: nowrap;
 }
 .five-day-forecast {
   display: grid;
   grid-template-columns: repeat(5, 20%);
   position: relative;
-  top: -11em;
-  margin: 2%;
+  top: -12em;
+  margin-top: -0.6rem;
   background-color: #26aaf7;
   list-style-type: none;
 }
@@ -140,11 +140,14 @@ main h3 {
 .five-day-forecast img {
   max-width: 100%;
 }
+.five-day-forecast-day {
+  font-weight: bold;
+}
 figcaption {
   font-weight: bold;
 }
 .article-container {
-  margin-top: -12em;
+  margin-top: -10em;
 }
 .article-image {
   width: 100%;

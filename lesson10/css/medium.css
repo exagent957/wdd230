@@ -53,6 +53,26 @@
   div.home-town-cards section#town2 {
     padding: 0;
   }
+  /*styling for weather summary*/
+  .weather-summary li {
+    line-height: 1rem;
+  }
+
+  /*styling for 5 day forecast*/
+  .five-day-forecast {
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+    top: -13em;
+  }
+
+  .five-day-forecast img {
+    width: 3rem;
+  }
+
+  .article-container {
+    margin-top: -9em;
+  }
+
   /*styling for gallery images - 2 columns in medium media query*/
   .gallery-container {
     display: grid;
