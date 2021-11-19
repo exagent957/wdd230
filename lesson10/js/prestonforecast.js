@@ -30,7 +30,7 @@ for (let i = 0; i < 5; i++) {
 }
 
 const apiForecastURL =
-  "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=c92a67dfadc88b3df96c476977e17cb8&units=imperial";
+  "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=c92a67dfadc88b3df96c476977e17cb8&units=imperial";
 fetch(apiForecastURL)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -41,7 +41,7 @@ fetch(apiForecastURL)
       document.querySelector(`#forecast-temp${[j]}`).innerHTML = `${eveForecast[
         j
       ].main.temp.toFixed(1)} &#8457`;
-      const imagesrc = `https://openweathermap.org/img/w/${eveForecast[j].weather[0].icon}.png`;
+      const imagesrc = `http://openweathermap.org/img/w/${eveForecast[j].weather[0].icon}.png`;
       const forecastDescription = eveForecast[j].weather[0].description;
       document
         .querySelector(`#forecast-icon${[j]}`)

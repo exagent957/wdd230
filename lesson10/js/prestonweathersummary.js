@@ -1,6 +1,6 @@
 /*Lesson 10: Weather API for the weather summary on Preston Page*/
 const apiURL =
-  "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=c92a67dfadc88b3df96c476977e17cb8&units=imperial";
+  "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=c92a67dfadc88b3df96c476977e17cb8&units=imperial";
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
