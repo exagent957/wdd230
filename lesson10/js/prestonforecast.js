@@ -30,7 +30,7 @@ for (let i = 0; i < 5; i++) {
 }
 
 const apiForecastURL =
-  "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=c92a67dfadc88b3df96c476977e17cb8&units=imperial";
+  "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=c92a67dfadc88b3df96c476977e17cb8&units=imperial";
 fetch(apiForecastURL)
   .then((response) => response.json())
   .then((jsObject) => {
