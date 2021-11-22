@@ -62,15 +62,21 @@
   .five-day-forecast {
     margin-top: 0.8rem;
     font-size: 0.8rem;
-    top: -13em;
+    top: -13.8em;
   }
 
   .five-day-forecast img {
     width: 3rem;
   }
-
+  .town-events-container {
+    bottom: 11rem;
+    padding-top: 2rem;
+  }
   .article-container {
     margin-top: -9em;
+  }
+  .article-image {
+    margin-bottom: -0.2rem;
   }
 
   /*styling for gallery images - 2 columns in medium media query*/

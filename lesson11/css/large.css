@@ -53,14 +53,18 @@
     justify-content: center;
   }
 
-  /*styling for 5 day forecast*/
+  /*styling for town 5 day forecast*/
   .five-day-forecast {
     margin-top: 1.4rem;
-    top: -14em;
+    top: -14.9rem;
   }
-
+  .town-events-container {
+    bottom: 15rem;
+    padding-top: 2.5rem;
+  }
+  /*styling for town article*/
   .article-container {
-    margin-top: -8em;
+    margin-top: -12em;
   }
   /*styling for gallery images - 3 columns in large media query*/
   .gallery-container {
