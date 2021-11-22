@@ -1,6 +1,6 @@
-/*Weather API for the weather summary on Preston Page*/
+/*Weather API for the weather summary on Soda Springs Page*/
 const apiURL =
-  "//api.openweathermap.org/data/2.5/weather?id=5604473&appid=c92a67dfadc88b3df96c476977e17cb8&units=imperial";
+  "//api.openweathermap.org/data/2.5/weather?id=5607916&appid=c92a67dfadc88b3df96c476977e17cb8&units=imperial";
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
