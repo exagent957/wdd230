@@ -7,11 +7,12 @@ fetch(apiURL)
     document.querySelector("#currently").textContent =
       jsObject.weather[0].description.toUpperCase();
 
-    const temperature = jsObject.main.temp.toFixed(1);
+    const temperature = Math.round(jsObject.main.temp);
     document.querySelector("#temperature").textContent = temperature;
-    document.querySelector("#humidity").textContent =
-      jsObject.main.humidity.toFixed(1);
-    const windspeed = jsObject.wind.speed.toFixed(1);
+    document.querySelector("#humidity").textContent = Math.round(
+      jsObject.main.humidity
+    );
+    const windspeed = Math.round(jsObject.wind.speed);
     document.querySelector("#wind-speed").textContent = windspeed;
 
     //calculates wind chill given current temperature and wind speed. Returns "N/A" if values out of range for proper wind chill calculation
@@ -21,7 +22,7 @@ fetch(apiURL)
         0.6215 * temperature -
         35.75 * Math.pow(windspeed, 0.16) +
         0.4275 * temperature * Math.pow(windspeed, 0.16);
-      document.querySelector("#wind-chill").textContent = windchill.toFixed(1);
+      document.querySelector("#wind-chill").textContent = Math.round(windchill);
     } else {
       const windChillDescriptor = "Wind Chill: N/A";
       document.querySelector("#wind-chill-descriptor").textContent =

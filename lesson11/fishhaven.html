@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Marc Williamson" />
+    <meta
+      name="description"
+      content="Fish Haven Town Page for weather and events. Live weather and 5 day forecast. WDD 230: Web Frontend Development at Brigham Young University - Idaho - Fall 2021"
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <title>Soda Springs Town Page</title>
+    <link rel="shortcut icon" href="images/favicon-owl.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="images/owl.png" alt="weather site logo owl" />
+      <section class="header-center">
+        <h1 class="header-title">Weather In Southeastern Idaho</h1>
+        <h2 class="moto">The wise choice for weather and more</h2>
+      </section>
+      <button onclick="toggleMenu()" class="hamburger-button">
+        &#9776;<br /><span class="button-title">Menu</span>
+      </button>
+    </header>
+    <nav>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="sodasprings.html">Soda Springs</a></li>
+        <li class="active"><a href="fishhaven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Fish Haven Idaho</h2>
+      <picture>
+        <source
+          srcset="images/fish-hero-image800.jpg"
+          media="(min-width: 650px) and (max-width: 1199px)"
+        />
+        <source
+          srcset="images/fish-hero-image1020.jpg"
+          media="(min-width: 1200px)"
+        />
+        <img
+          class="hero-image"
+          src="images/fish-hero-image400.jpg"
+          alt="Lake and mountains near Fish Haven Idaho"
+        />
+      </picture>
+      <section class="weather-summary">
+        <h3>Weather Summary</h3>
+        <ul>
+          <li>Currently: <span id="currently"></span></li>
+          <li>Temperature: <span id="temperature"></span>&#8457;</li>
+          <li id="wind-chill-descriptor">
+            Wind Chill: <span id="wind-chill"></span>&#8457;
+          </li>
+          <li>Humidity: <span id="humidity"></span>%</li>
+          <li>Wind Speed: <span id="wind-speed"></span> mph</li>
+        </ul>
+      </section>
+      <div class="five-day-forecast">
+        <figure>
+          <div class="five-day-forecast-day">
+            <span id="forecast-day0"></span>
+          </div>
+          <img src="#" alt="#" id="forecast-icon0" />
+          <figcaption><span id="forecast-temp0"></span></figcaption>
+        </figure>
+        <figure>
+          <div class="five-day-forecast-day">
+            <span id="forecast-day1"></span>
+          </div>
+          <img src="#" alt="#" id="forecast-icon1" />
+          <figcaption><span id="forecast-temp1"></span></figcaption>
+        </figure>
+        <figure>
+          <div class="five-day-forecast-day">
+            <span id="forecast-day2"></span>
+          </div>
+          <img src="#" alt="#" id="forecast-icon2" />
+          <figcaption><span id="forecast-temp2"></span></figcaption>
+        </figure>
+        <figure>
+          <div class="five-day-forecast-day">
+            <span id="forecast-day3"></span>
+          </div>
+          <img src="#" alt="#" id="forecast-icon3" />
+          <figcaption><span id="forecast-temp3"></span></figcaption>
+        </figure>
+        <figure>
+          <div class="five-day-forecast-day">
+            <span id="forecast-day4"></span>
+          </div>
+          <img src="#" alt="#" id="forecast-icon4" />
+          <figcaption><span id="forecast-temp4"></span></figcaption>
+        </figure>
+      </div>
+      <section class="town-events-container">
+        <h3>Upcoming Events</h3>
+        <ul class="town-event-list">
+          <!--Use of JavaScript here to bring in town events as li elements-->
+        </ul>
+      </section>
+      <section class="article-container">
+        <h3>Some homeowners wary of proposed Bear Lake development</h3>
+        <p>
+          ST. CHARLES, Idaho – A proposed development could more than double the
+          population of St. Charles on the Idaho side of Bear Lake. Some area
+          homeowners are trying to fight it but there may not be much they can
+          do. <br />
+          <br />
+          That’s frustrating to Wayne Keetch. His family homesteaded in St.
+          Charles. “I was born and raised here,” he explained. He came back to
+          the area in the early ’70s. “This house was the newest house in St.
+          Charles for five years.” The longtime cattle rancher said the area
+          hasn’t seen a whole lot of growth, until recently. “A year ago, there
+          were eight new homes built right here in St. Charles so we’ve seen a
+          lot of growth in the last few years,” he said. They could soon see a
+          whole lot more. <br />
+          <br />
+          “I think we’ve checked every box,” said developer Thom Morgan. “I
+          think we’ve gone through every item.” He recently told a packed room
+          before the Bear Lake County Planning and Zoning commission that his
+          team has spent four and a half years making sure they do this right.
+          The Seven Mile Ranch Subdivision just outside of St. Charles would
+          have one home per acre and some very strict HOA rules to limit
+          short-term rentals from getting out of hand.<br />
+          <br />
+          Resident Stacey Transtrum wasn’t so sure. “What used to be holiday
+          weekends, we’re seeing that influx of people on every weekend, not
+          just the holidays.”As the popularity of Bear Lake grows, interest in
+          summer homes is going up with it. Keetch said he understands that but
+          worries about what’s happening to his small town. “I’m trying to be
+          open-minded about the whole thing, but all of a sudden to have
+          several, well 250 new homes in the area is not exactly my idea of
+          fun,” he said. <br />
+          <br />
+          As long as the developers are able to keep up with building and zoning
+          requirements these plans will likely continue to go forward. The first
+          two phases were passed on to the county commission for review. Some
+          say the area could use the boost in tax revenue. “At full buildout,
+          that’s going to have a significant impact on the asset value of Bear
+          Lake County, and cash flow that will add to the varying taxing
+          districts that this property resides with,” homeowner Roy Bunderson
+          said. Morgan said he’s made sure there will be enough well water for
+          the homes and he will work with the community to try and keep traffic
+          on U.S. Highway 89 and off city roads. <br />
+          <span class="article-attribution"
+            >Article by Mike Anderson, KSL TV.</span
+          >
+        </p>
+        <picture>
+          <source
+            srcset="images/fish-development600.jpg"
+            media="(min-width: 650px) and (max-width: 1199px)"
+          />
+          <source
+            srcset="images/fish-development711.jpg"
+            media="(min-width: 1200px)"
+          />
+          <img
+            class="article-image"
+            src="images/fish-development400.jpg"
+            alt="Proposed development site near St. Charles Idaho"
+          />
+        </picture>
+      </section>
+    </main>
+    <footer>
+      <div class="map-contact-container">
+        <picture>
+          <source
+            srcset="images/fish-map600.jpg"
+            media="(min-width: 650px) and (max-width: 1199px)"
+          />
+          <source srcset="images/fish-map900.jpg" media="(min-width: 1200px)" />
+          <img
+            class="footer-map"
+            src="images/fish-map300.jpg"
+            alt="Google satellite image of 
+          Fish Haven Idaho"
+          />
+        </picture>
+        <section class="contact-container">
+          <h3>Weather In Southeast Idaho</h3>
+          <p>
+            <span class="material-icons md-18">home</span>1800 Main St, Preston,
+            ID 00000
+          </p>
+          <p>
+            <span class="material-icons md-18">email</span>Contact@wiseid.info
+          </p>
+          <p><span class="material-icons md-18">phone</span>866-385-1234</p>
+        </section>
+      </div>
+      <div class="footer-bar">
+        <div class="socialmedia-container">
+          <a href="https://www.facebook.com"
+            ><img src="images/facebook.png" alt="Facebook logo"
+          /></a>
+          <a href="https://www.twitter.com"
+            ><img src="images/twitter.png" alt="Twitter logo"
+          /></a>
+          <a href="https://www.youtube.com"
+            ><img src="images/youtube.png" alt="YouTube logo"
+          /></a>
+          <a href="https://www.linkedin.com"
+            ><img src="images/linkedin.png" alt="LinkedIn logo"
+          /></a>
+        </div>
+        <p>
+          &copy; <span id="year"></span> wiseid.info |
+          <span id="current-date"></span> |
+          <span
+            ><a class="attributions" target="_blank" href="attributions.html"
+              >Attributions</a
+            ></span
+          >
+        </p>
+      </div>
+    </footer>
+    <script src="js/fishweathersummary.js"></script>
+    <script src="js/fishforecast.js"></script>
+    <script src="js/fish-haven-events.js"></script>
+    <script src="js/currentYear.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/toggleBanner.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({ google: { families: ["PT Sans", "Noto Serif"] } });
+    </script>
+  </body>
+</html>

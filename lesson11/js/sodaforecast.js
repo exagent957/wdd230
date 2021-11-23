@@ -38,10 +38,10 @@ fetch(apiForecastURL)
       x.dt_txt.includes("18:00:00")
     );
     for (let j = 0; j < 5; j++) {
-      document.querySelector(`#forecast-temp${[j]}`).innerHTML = `${eveForecast[
-        j
-      ].main.temp.toFixed(1)} &#8457`;
-      const imagesrc = `http://openweathermap.org/img/w/${eveForecast[j].weather[0].icon}.png`;
+      document.querySelector(`#forecast-temp${[j]}`).innerHTML = `${Math.round(
+        eveForecast[j].main.temp
+      )} &#8457`;
+      const imagesrc = `//openweathermap.org/img/w/${eveForecast[j].weather[0].icon}.png`;
       const forecastDescription = eveForecast[j].weather[0].description;
       document
         .querySelector(`#forecast-icon${[j]}`)
