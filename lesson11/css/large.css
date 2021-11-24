@@ -16,14 +16,20 @@
   div.home-town-cards section {
     padding: 0;
   }
-  div.home-town-cards section#town2 .town-text-area {
+  div.home-town-cards section .town-text-area {
     grid-column: unset;
     position: unset;
     top: 0rem;
-    font-size: 0.9rem;
+    font-size: 0.6rem;
+  }
+  div.home-town-cards section img {
+    margin-top: 2rem;
+  }
+  div.home-town-cards section#town2 .town-text-area {
+    margin-top: -6rem;
   }
   div.home-town-cards section#town2 img {
-    margin-top: -0.2rem;
+    margin-top: 7.5rem;
     grid-column: unset;
     padding-left: 0;
     position: unset;
@@ -52,7 +58,10 @@
     align-items: center;
     justify-content: center;
   }
-
+  /*styling for weather summary*/
+  .weather-summary li {
+    line-height: 1.4rem;
+  }
   /*styling for town 5 day forecast*/
   .five-day-forecast {
     margin-top: 1.4rem;

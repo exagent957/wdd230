@@ -213,10 +213,13 @@ footer p {
 .socialmedia-container a:hover {
   background-color: white;
 }
-.attributions:visited {
+div.footer-bar p span a.attributions {
+  color: white;
+}
+a.attributions:visited {
   color: #ffff;
 }
-.attributions:hover {
+a.attributions:hover {
   color: #fdd900;
 }
 /*Home Page*/
@@ -309,10 +312,12 @@ body #banner p {
 }
 .town-events-container ul {
   list-style: none;
+  position: relative;
+  right: 1rem;
 }
 .town-event-list li {
   position: relative;
-  right: 1rem;
+  right: 1 rem;
 }
 /*styling for storm center page*/
 .storm-center-banner {

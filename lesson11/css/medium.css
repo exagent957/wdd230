@@ -55,12 +55,12 @@
   }
   /*styling for weather summary*/
   .weather-summary li {
-    line-height: 1rem;
+    line-height: 1.2rem;
   }
 
   /*styling for 5 day forecast*/
   .five-day-forecast {
-    margin-top: 0.8rem;
+    margin-top: -1rem;
     font-size: 0.8rem;
     top: -13.8em;
   }
