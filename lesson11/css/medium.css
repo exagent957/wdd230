@@ -64,7 +64,10 @@
     font-size: 0.8rem;
     top: -13.8em;
   }
-
+  .five-day-forecast figure {
+    width: 70%;
+    position: unset;
+  }
   .five-day-forecast img {
     width: 3rem;
   }
@@ -107,10 +110,7 @@
   .logo {
     width: 97px;
   }
-  .five-day-forecast figure {
-    width: auto;
-    position: unset;
-  }
+
   .contact-container {
     font-size: 1em;
   }
