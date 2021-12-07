@@ -1,0 +1,6 @@
+/*styling for small viewports*/
+
+/*Set weather-alert-contianer display to none by default*/
+.weather-alert-container {
+  display: none;
+}
