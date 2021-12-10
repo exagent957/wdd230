@@ -9,7 +9,7 @@
       content="Hartselle, Alabama, Area Chamber of Commerce, directory, events, membership."
     />
     <title>Hartselle Chamber</title>
-    <link rel="shortcut icon" href="#" />
+    <link rel="shortcut icon" href="images/favicon-traincar.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -19,218 +19,320 @@
     <link rel="stylesheet" href="css/large.css" />
   </head>
   <body>
-    <div class="weather-alert-container">
-      <div class="weather-alert-items">
-        <p>NATIONAL WEATHER ALERTS:</p>
-        <!--JavaScript brings in weather alert if any-->
+    <div class="content">
+      <div class="weather-alert-container">
+        <div class="weather-alert-items">
+          <p>NATIONAL WEATHER ALERTS:</p>
+          <!--JavaScript brings in weather alert if any-->
+        </div>
+        <button class="closealert" onclick="closeDivBtn()">X</button>
       </div>
-      <button onclick="closeDivBtn()">X</button>
-    </div>
-    <header>
-      <section class="home-title-container">
-        <img
-          class="logo"
-          src="images/trainicon800.jpg"
-          alt="logo is a red train rail car"
-        />
-        <h1>Hartselle Area Chamber of Commerce</h1>
-        <h2><em>City of Southern Hospitality</em></h2>
-      </section>
-      <button onclick="toggleMenu()" class="hamburger-button">
-        &#9776;<br /><span class="button-title">Menu</span>
-      </button>
-      <nav>
-        <ul id="primaryNav" class="hide">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="hartselle.html">City of Hartselle</a></li>
-          <li><a href="join.html">Join</a></li>
-          <li><a href="directory.html">Directory</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="banner-image-container">
-      <picture>
-        <source srcset="#" media="(min-width: 650px) and (max-width: 1199px)" />
-        <source srcset="#" media="(min-width: 1200px)" />
-        <img
-          class="banner-image"
-          src="images/placeholder.jpg"
-          alt="banner image"
-        />
-      </picture>
-      <section class="call-to-action">
-        <a class="call-to-action-link" href="#"> <h3>Join HACC Today</h3></a>
-      </section>
-    </div>
-    <section class="welcome-message-container">
-      <h2>Welcome Message from Hartselle Mayor Randy Garrison</h2>
-      <p>
-        On behalf of the City of Hartselle I welcome your interest in our
-        hometown. Founded in 1870 Hartselle has a long history and proud
-        traditions. We are currently working to improve the lives of each of our
-        citizens by bringing new business and industry to our city. We are also
-        making plans so the next generation of those who will call Hartselle
-        home are able to be blessed with the life and happiness that those who
-        came before them enjoyed as well.
-      </p>
-      <p>
-        Affectionately known as “The City of Southern Hospitality” we seek to
-        share this with those who live here, as well as those who visit our fair
-        city. From families who claim several generations of those who have
-        called Hartselle home, up to those who have recently made the move to
-        Hartselle, you are soon to find the friendliness of a small community,
-        but one that also offers many opportunities and facilities usually found
-        in larger cites. All one needs to do is walk down the sidewalks of our
-        downtown to find a friendly smile and maybe even a “how are y’all doing”
-        greeting.
-      </p>
-      <p>
-        Hartselle offers a highly rated school system, park and recreation
-        facilities for many sports, an outstanding aquatic center, arts center,
-        historical and contemporary housing, large number of churches for the
-        faith based community, unique dining facilities and a safe place for
-        raising your family. Hartselle is ideal for those looking for a small
-        town lifestyle, but is also located conveniently to larger cities for
-        other services. Whether you are coming to visit or planning to call
-        Hartselle home, we welcome you and know you will find your place here
-        among friends.
-      </p>
-      <picture>
-        <source
-          srcset="images/hartsellemayor.jpg"
-          media="(min-width: 650px) and (max-width: 1199px)"
-        />
-        <source
-          srcset="images/hartsellemayor.jpg"
-          media="(min-width: 1200px)"
-        />
-        <img
-          class="welcome-image"
-          src="images/hartsellemayor.jpg"
-          alt="Mayor Randy Garrison"
-        />
-      </picture>
-    </section>
-    <div class="spotlight-card-container">
-      <section class="spotlight-card1">
-        <h3>Business Spotlight1</h3>
-        <p>Business Spotlight1 text</p>
+      <header>
+        <section class="home-title-container">
+          <img
+            class="logo"
+            src="images/trainicon800.jpg"
+            alt="logo is a red train rail car"
+          />
+          <h1>Hartselle Area Chamber of Commerce</h1>
+          <h2><em>City of Southern Hospitality</em></h2>
+        </section>
+        <button onclick="toggleMenu()" class="hamburger-button">
+          &#9776;<br /><span class="button-title">Menu</span>
+        </button>
+        <nav>
+          <ul id="primaryNav" class="hide">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="hartselle.html">City of Hartselle</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="banner-image-container">
         <picture>
           <source
-            srcset="#"
+            srcset="images/homebanner1200.jpg"
             media="(min-width: 650px) and (max-width: 1199px)"
           />
-          <source srcset="#" media="(min-width: 1200px)" />
-          <img
-            class="spotlight-image"
-            src="images/placeholder.jpg"
-            alt="spotlight image"
-          />
-        </picture>
-      </section>
-      <section class="spotlight-card2">
-        <h3>Business Spotlight2</h3>
-        <p>Business Spotlight2 text</p>
-        <picture>
           <source
-            srcset="#"
-            media="(min-width: 650px) and (max-width: 1199px)"
+            srcset="images/homebanner2000.jpg"
+            media="(min-width: 1200px)"
           />
-          <source srcset="#" media="(min-width: 1200px)" />
           <img
-            class="spotlight-image"
-            src="images/placeholder.jpg"
-            alt="spotlight image"
+            class="banner-image"
+            src="images/homebanner600.jpg"
+            alt="Sun sets over Hartselle Alabama historic district"
           />
         </picture>
-      </section>
-      <section class="spotlight-card3">
-        <h3>Business Spotlight3</h3>
-        <p>Business Spotlight3 text</p>
-        <picture>
-          <source
-            srcset="#"
-            media="(min-width: 650px) and (max-width: 1199px)"
-          />
-          <source srcset="#" media="(min-width: 1200px)" />
-          <img
-            class="spotlight-image"
-            src="images/placeholder.jpg"
-            alt="spotlight image"
-          />
-        </picture>
-      </section>
-    </div>
-    <section class="events-container">
-      <h3>Hartselle Area Upcoming Events</h3>
-      <p>Event1</p>
-      <img src="#" alt="event image" />
-      <p>Event2</p>
-      <img src="#" alt="event image" />
-      <p>Event3</p>
-      <img src="#" alt="event image" />
-    </section>
-    <section class="current-conditions-container">
-      <h3>Current Conditions</h3>
-      <!--JavaScript brings in current weather conditions-->
-      <p>Currently: <span id="currently"></span></p>
-      <p>Temperature: <span id="current-temperature"></span>&#8457;</p>
-      <p>Humidity: <span id="humidity"></span>%</p>
-    </section>
-    <section class="three-day-forecast-container">
-      <h3>3-day Forecast</h3>
-      <!--JavaScript brings in 3-day forecast-->
-      <figure>
-        <div class="three-day-forecast-day">
-          <span id="forecast-day0"></span>
-        </div>
-        <img src="#" alt="#" id="forecast-icon1" />
-        <figcaption><span id="forecast-temp1"></span></figcaption>
-      </figure>
-      <figure>
-        <div class="three-day-forecast-day">
-          <span id="forecast-day1"></span>
-        </div>
-        <img src="#" alt="#" id="forecast-icon2" />
-        <figcaption><span id="forecast-temp2"></span></figcaption>
-      </figure>
-      <figure>
-        <div class="three-day-forecast-day">
-          <span id="forecast-day2"></span>
-        </div>
-        <img src="#" alt="#" id="forecast-icon3" />
-        <figcaption><span id="forecast-temp3"></span></figcaption>
-      </figure>
-    </section>
-    <footer>
-      <div class="contact-container">
-        <p>Hartselle Area Chamber of Commerce</p>
-        <p>P.O. Box 817, Hartselle, AL 35640</p>
-        <p>(256) 773-4370, admin@hartsellechamber.com</p>
+        <section class="call-to-action">
+          <a class="call-to-action-link" href="#"> <h3>Join HACC Today</h3></a>
+        </section>
       </div>
-      <div class="socialmedia-container">
-        <a href="https://www.facebook.com"
-          ><img src="images/facebook.png" alt="Facebook logo"
-        /></a>
-        <a href="https://www.twitter.com"
-          ><img src="images/twitter.png" alt="Twitter logo"
-        /></a>
-        <a href="https://www.linkedin.com"
-          ><img src="images/linkedin.png" alt="LinkedIn logo"
-        /></a>
-      </div>
-      <div class="footer-bar">
+      <section class="welcome-message-container">
+        <h2>Welcome Message from Hartselle Mayor Randy Garrison</h2>
         <p>
-          &copy; <span id="year"></span> | Hartselle Area Chamber of Commerce |
-          <a href="attributions.html">Attributions</a><br />
-          Last Updated: <span id="lastUpdate"></span>
+          On behalf of the City of Hartselle I welcome your interest in our
+          hometown. Founded in 1870 Hartselle has a long history and proud
+          traditions. We are currently working to improve the lives of each of
+          our citizens by bringing new business and industry to our city. We are
+          also making plans so the next generation of those who will call
+          Hartselle home are able to be blessed with the life and happiness that
+          those who came before them enjoyed as well.
         </p>
+        <p>
+          Affectionately known as “The City of Southern Hospitality” we seek to
+          share this with those who live here, as well as those who visit our
+          fair city. From families who claim several generations of those who
+          have called Hartselle home, up to those who have recently made the
+          move to Hartselle, you are soon to find the friendliness of a small
+          community, but one that also offers many opportunities and facilities
+          usually found in larger cites. All one needs to do is walk down the
+          sidewalks of our downtown to find a friendly smile and maybe even a
+          “how are y’all doing” greeting.
+        </p>
+        <p>
+          Hartselle offers a highly rated school system, park and recreation
+          facilities for many sports, an outstanding aquatic center, arts
+          center, historical and contemporary housing, large number of churches
+          for the faith based community, unique dining facilities and a safe
+          place for raising your family. Hartselle is ideal for those looking
+          for a small town lifestyle, but is also located conveniently to larger
+          cities for other services. Whether you are coming to visit or planning
+          to call Hartselle home, we welcome you and know you will find your
+          place here among friends.
+        </p>
+        <picture>
+          <source
+            srcset="images/hartsellemayor.jpg"
+            media="(min-width: 650px) and (max-width: 1199px)"
+          />
+          <source
+            srcset="images/hartsellemayor.jpg"
+            media="(min-width: 1200px)"
+          />
+          <img
+            class="welcome-image"
+            src="images/hartsellemayor.jpg"
+            alt="Mayor Randy Garrison"
+          />
+        </picture>
+      </section>
+      <div class="spotlight-card-container">
+        <section class="spotlight-card1">
+          <h3>Cullman Regional Urgent Care and Imaging Center</h3>
+          <p>
+            Cullman Regional's new Urgent Care and Imaging Center is now open in
+            Hartselle. We are fully staffed with professional health providers
+            awaiting to serve your medical needs.
+          </p>
+          <picture>
+            <source
+              srcset="images/urgentcareopens800.jpg"
+              media="(min-width: 650px) and (max-width: 1199px)"
+            />
+            <source
+              srcset="images/urgentcareopens1000.jpg"
+              media="(min-width: 1200px)"
+            />
+            <img
+              class="spotlight-image"
+              src="images/urgentcareopens600.jpg"
+              alt="New urgent care building finished"
+            />
+          </picture>
+        </section>
+        <section class="spotlight-card2">
+          <h3>McCutcheon Heating & Air Conditiong, Inc.</h3>
+          <p>
+            McCutcheon Heating and Air Inc. is your one source for Trane
+            Heating, Cooling and Clean Air Products and Services. At McCutcheon
+            Heating and Air Inc., customer satisfaction comes first and we want
+            to ensure that your family is comfortable inside no matter what the
+            weather is outside. We have been performing quality HVAC service and
+            installation of new or replacement systems for homeowners and
+            contractors all over Hartselle and surrounding areas since 1985.
+          </p>
+          <picture>
+            <source
+              srcset="images/mccutcheon400.jpg"
+              media="(min-width: 650px) and (max-width: 1199px)"
+            />
+            <source
+              srcset="images/mccutcheon600.jpg"
+              media="(min-width: 1200px)"
+            />
+            <img
+              class="spotlight-image"
+              src="images/mccutcheon200.jpg"
+              alt="Tom McCutcheon standing by one of his fleet service vans"
+            />
+          </picture>
+        </section>
+        <section class="spotlight-card3">
+          <h3>Freight House Restaurant</h3>
+          <p>
+            The Freight House Restaurant is a modern southern restaurant located
+            in downtown Hartselle, Alabama. We are located in the historic
+            freight terminal. This historic landmark has been remodeled as a
+            dining facility and catering venue. Our guests may hear passing
+            trains and witness a unique union of the past and present.
+          </p>
+          <picture>
+            <source
+              srcset="images/freighthouse400.jpg"
+              media="(min-width: 650px) and (max-width: 1199px)"
+            />
+            <source
+              srcset="images/freighthouse550.jpg"
+              media="(min-width: 1200px)"
+            />
+            <img
+              class="spotlight-image"
+              src="images/freighthouse200.jpg"
+              alt="Freight House Restaurant by the tracks"
+            />
+          </picture>
+        </section>
       </div>
-    </footer>
+      <section class="events-container">
+        <h3>Hartselle Area Upcoming Events</h3>
+        <p>
+          Do you have a second-grade student in Hartselle? Send us their Letter
+          to Santa and see it published in the newspaper! This special section
+          will print Dec. 22 and will include letters and colorful artwork.
+          <br />
+          You can mail letters to the North Pole (c/o the Hartselle Enquirer) or
+          drop them off at the office at 206 Cedar St. NW. Mailed letters should
+          be delivered to P.O. Box 929, Hartselle, AL 35640 no later than Dec.
+          20.
+        </p>
+        <picture>
+          <source
+            srcset="images/letterstosanta900.jpg"
+            media="(min-width: 650px) and (max-width: 1199px)"
+          />
+          <source
+            srcset="images/letterstosanta1200.jpg"
+            media="(min-width: 1200px)"
+          />
+          <img
+            class="spotlight-image"
+            src="images/letterstosanta600.jpg"
+            alt="Girl in red dress writing a letter to Santa"
+          />
+        </picture>
+
+        <p>
+          First Christian Church in Hartselle, 209 E. Main St., presents a live
+          nativity scene in front of the church. The annual event features live
+          animals as well as members of the church dressed as Bible characters.
+          The scene will be staged nightly Dec. 8-23 from 6-7:30 p.m. The public
+          is invited to drive by or walk up to view and pet the animals. This
+          will be the fourth year for the event, which organizers said is
+          designed to draw attention to the true meaning of the season.
+        </p>
+        <picture>
+          <source
+            srcset="images/nativity600.jpg"
+            media="(min-width: 650px) and (max-width: 1199px)"
+          />
+          <source
+            srcset="images/nativity-622x409-1.png"
+            media="(min-width: 1200px)"
+          />
+          <img
+            class="spotlight-image"
+            src="images/nativity400.jpg"
+            alt="Live nativity scene"
+          />
+        </picture>
+        <p>
+          Thousands expected to attend the 41st annual Depot Days festival held
+          March 18 in downtown Hartselle.
+        </p>
+        <picture>
+          <source
+            srcset="images/hartselledepotdays600.jpg"
+            media="(min-width: 650px) and (max-width: 1199px)"
+          />
+          <source
+            srcset="images/hartselledepotdays800.jpg"
+            media="(min-width: 1200px)"
+          />
+          <img
+            class="spotlight-image"
+            src="images/hartselledepotdays400.jpg"
+            alt="Overhead view of Depot Days in historic downtown Hartselle"
+          />
+        </picture>
+      </section>
+      <section class="current-conditions-container">
+        <h3>Current Conditions</h3>
+        <!--JavaScript brings in current weather conditions-->
+        <p>Currently: <span id="currently"></span></p>
+        <p>Temperature: <span id="current-temperature"></span>&#8457;</p>
+        <p>Humidity: <span id="humidity"></span>%</p>
+      </section>
+      <section class="three-day-forecast-container">
+        <h3>3-day Forecast</h3>
+        <!--JavaScript brings in 3-day forecast-->
+        <figure>
+          <div class="three-day-forecast-day">
+            <span id="forecast-day0"></span>
+          </div>
+          <img src="#" alt="#" id="forecast-icon1" />
+          <figcaption><span id="forecast-temp1"></span></figcaption>
+        </figure>
+        <figure>
+          <div class="three-day-forecast-day">
+            <span id="forecast-day1"></span>
+          </div>
+          <img src="#" alt="#" id="forecast-icon2" />
+          <figcaption><span id="forecast-temp2"></span></figcaption>
+        </figure>
+        <figure>
+          <div class="three-day-forecast-day">
+            <span id="forecast-day2"></span>
+          </div>
+          <img src="#" alt="#" id="forecast-icon3" />
+          <figcaption><span id="forecast-temp3"></span></figcaption>
+        </figure>
+      </section>
+      <footer>
+        <div class="contact-container">
+          <p>Hartselle Area Chamber of Commerce</p>
+          <p>P.O. Box 817, Hartselle, AL 35640</p>
+          <p>(256) 773-4370, admin@hartsellechamber.com</p>
+        </div>
+        <div class="socialmedia-container">
+          <a href="https://www.facebook.com"
+            ><img src="images/facebook.png" alt="Facebook logo"
+          /></a>
+          <a href="https://www.twitter.com"
+            ><img src="images/twitter.png" alt="Twitter logo"
+          /></a>
+          <a href="https://www.linkedin.com"
+            ><img src="images/linkedin.png" alt="LinkedIn logo"
+          /></a>
+        </div>
+        <div class="footer-bar">
+          <p>
+            &copy; <span id="year"></span> | Hartselle Area Chamber of Commerce
+            | <a href="attributions.html">Attributions</a><br />
+            Last Updated: <span id="lastUpdate"></span>
+          </p>
+        </div>
+      </footer>
+    </div>
     <script src="js/weather.js"></script>
     <script src="js/currentYear.js"></script>
     <script src="js/lastUpdate.js"></script>
     <script src="js/closeBtn.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({ google: { families: ["Abhaya Libre", "Lato"] } });
+    </script>
   </body>
 </html>

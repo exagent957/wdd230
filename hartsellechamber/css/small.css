@@ -1,6 +1,31 @@
 /*styling for small viewports*/
-
+body {
+  background-color: rgb(15, 15, 15);
+}
+.content {
+  margin: 0 auto;
+  background-color: rgb(15, 15, 15);
+  color: white;
+  font-family: "Abhaya Libre" serif;
+  font-size: 9pt;
+  text-align: left;
+  max-width: 2000px;
+}
 /*Set weather-alert-contianer display to none by default*/
 .weather-alert-container {
+  background-color: #93002c;
+  color: rgb(245, 241, 10);
+  max-width: 40rem;
   display: none;
+  padding: 3%;
+}
+.closealert {
+  font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lato" sans-serif;
 }
