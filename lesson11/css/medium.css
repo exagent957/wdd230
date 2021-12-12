@@ -5,7 +5,7 @@
     max-width: 100%;
     font-size: 14pt;
   }
-  header .hamburger-button {
+  header.hamburger-button {
     display: none;
   }
   nav ul {

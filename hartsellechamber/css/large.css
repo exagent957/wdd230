@@ -1,1 +1,26 @@
 /*styling for large viewports*/
+@media only screen and (min-width: 60em) {
+  .content {
+    font-size: 18px;
+  }
+  .logo {
+    width: 12rem;
+    margin-top: -4rem;
+  }
+  .welcome-message-container p {
+    columns: 3;
+  }
+  .weather-container {
+    bottom: 164em;
+    left: 40em;
+    margin: 0 41em 10em 0;
+  }
+  .event-heading {
+    margin-left: 0;
+  }
+  footer {
+    max-width: 1300px;
+    bottom: 27.2em;
+    margin: 0 auto;
+  }
+}

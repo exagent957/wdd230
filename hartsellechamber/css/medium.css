@@ -1,1 +1,146 @@
 /*styling for tablets or medium veiwports*/
+@media only screen and (min-width: 20em) {
+  .content {
+    font-size: 14px;
+  }
+  .welcome-message-container {
+    grid-template-rows: 2rem 14rem;
+  }
+}
+
+@media only screen and (min-width: 30em) {
+  .content {
+    font-size: 15px;
+  }
+  .logo {
+    width: 8rem;
+    margin-top: -2rem;
+  }
+  .hamburger-button {
+    display: none;
+  }
+  .header-text {
+    width: 100%;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul.hide {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1 1 100%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  nav ul li a {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .weather-container {
+    display: flex;
+    position: relative;
+    bottom: 112em;
+    left: 23em;
+    background-color: #f9f8f7ad;
+    color: rgb(0 0 0);
+    box-shadow: 0 4px 8px 0 rgba(206, 120, 120, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0 24em 10em 0;
+    line-height: 0.9em;
+  }
+  .three-day-forecast-container {
+    margin-top: 1rem;
+    margin-left: -2em;
+    padding-top: 0;
+  }
+  .welcome-message-container {
+    grid-template-rows: 2rem 13rem;
+  }
+  .welcome-image {
+    margin-top: -1rem;
+  }
+  .welcome-message-container p {
+    columns: 2;
+  }
+  .spotlight-image {
+    max-width: 70%;
+  }
+  footer {
+    font-size: 0.8rem;
+    grid-template-rows: 5.5rem 3rem;
+    position: relative;
+    bottom: 23.5em;
+  }
+  .media-icon {
+    max-width: 2.4rem;
+  }
+}
+@media only screen and (min-width: 45em) {
+  .current-conditions-container {
+    bottom: 120em;
+    left: 45em;
+    margin: 0 -1em 4em 0;
+  }
+  .welcome-message-container {
+    grid-template-rows: 2rem 10rem;
+  }
+  .welcome-image {
+    margin-top: -2rem;
+  }
+  .spotlight-image {
+    max-width: 50%;
+  }
+  .weather-container {
+    bottom: 168em;
+    left: 33em;
+    margin: 0 34em 10em 0;
+  }
+  .event-image {
+    display: block;
+  }
+  .events-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25em 25em 25em;
+  }
+  .events-container p {
+    padding-top: 5em;
+  }
+  .event-heading {
+    margin-left: -1rem;
+    margin-bottom: -1em;
+  }
+  .event1-image {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .event1-text {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 0;
+  }
+  .event2-image {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .event2-text {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .event3-image {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .event3-text {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .media-icon {
+    max-width: 2.6rem;
+  }
+  footer {
+    bottom: 24.5em;
+  }
+}
