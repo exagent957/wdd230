@@ -130,8 +130,8 @@ nav ul li a:hover {
 .welcome-message-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 2rem 17rem;
-  margin-top: -2.5rem;
+  grid-template-rows: 4em 18rem;
+  margin-top: -3.3rem;
   border: solid 1px #93002c;
   padding-top: 1em;
   height: auto;
@@ -254,6 +254,7 @@ footer {
   grid-row: 1/2;
   padding-top: 0.5rem;
   background-color: #707070;
+  color: #000;
 }
 .socialmedia-container {
   grid-column: 2/3;
@@ -279,4 +280,43 @@ footer {
 }
 .footer-bar a:visited {
   color: yellow;
+}
+/*Hartselle city page*/
+.historic-facts-container {
+  border: solid 1px #707070;
+  margin-top: -0.3em;
+  padding-top: 1em;
+}
+.historic-facts-container img {
+  max-width: 100%;
+}
+.demographics-container {
+  border: solid 1px #009147;
+  background-color: #fcf0e0;
+  color: #000;
+  padding-top: 1em;
+}
+.demographics-container img {
+  max-width: 100%;
+}
+.demographics-container h3 {
+  padding-top: 1em;
+  margin-bottom: -0.5em;
+}
+.events-container a.cityweb {
+  margin: -1em 0 0 3%;
+  font-size: 0.8rem;
+}
+.events-container .city-events-list {
+  padding-bottom: 2em;
+}
+.promote-city {
+  background-color: #93002c;
+  border: solid 1px #009147;
+  padding: 2em 1em 2em 0;
+  margin-top: -1em;
+}
+.promote-city label,
+input {
+  margin-left: 3%;
 }

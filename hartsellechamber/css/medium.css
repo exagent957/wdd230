@@ -70,6 +70,8 @@
   footer {
     font-size: 0.8rem;
     grid-template-rows: 5.5rem 3rem;
+  }
+  footer.home-footer {
     position: relative;
     bottom: 23.5em;
   }
@@ -140,7 +142,7 @@
   .media-icon {
     max-width: 2.6rem;
   }
-  footer {
+  footer.home-footer {
     bottom: 24.5em;
   }
 }
