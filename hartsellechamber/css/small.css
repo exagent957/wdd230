@@ -130,7 +130,7 @@ nav ul li a:hover {
 .welcome-message-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 4em 18rem;
+  grid-template-rows: 4em auto;
   margin-top: -3.3rem;
   border: solid 1px #93002c;
   padding-top: 1em;
@@ -340,4 +340,18 @@ footer {
 .promote-city label,
 input {
   margin-left: 3%;
+}
+/*Become a Member page*/
+.membership-container {
+  background-color: #fcf0e0;
+  color: #000;
+  padding-top: 1em;
+  margin-top: -0.3em;
+  border: solid 1px #009147;
+}
+.application {
+  border: solid 1px #93002c;
+}
+.application form fieldset {
+  display: block;
 }
