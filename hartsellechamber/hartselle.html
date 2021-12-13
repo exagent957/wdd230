@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/large.css" />
   </head>
   <body>
-    <section class="content">
+    <div class="content">
       <header>
         <section class="title-container">
           <div class="logo-hamburger">
@@ -85,31 +85,42 @@
       <section class="demographics-container">
         <h2>Hartselle Current Demographics</h2>
         <picture class="deomgraphics-image">
-        <source
-          srcset="images/populationchart.jpg"
-          media="(min-width: 650px) and (max-width: 1199px)"
-        />
-        <source
-          srcset="images/populationchart.jpg"
-          media="(min-width: 1200px)"
-        />
-        <img src="images/populationchart.jpg" alt="demographics image" />
+          <source
+            srcset="images/populationchart.jpg"
+            media="(min-width: 600px) and (max-width: 1199px)"
+          />
+          <source
+            srcset="images/populationchart.jpg"
+            media="(min-width: 1200px)"
+          />
+          <img src="images/populationchart.jpg" alt="demographics image" />
         </picture>
         <p>
-        Hartselle is a city located in Morgan County Alabama. With a 2020
-        population of 14,546, it is the 45th largest city in Alabama and the
-        2366th largest city in the United States. Hartselle is currently growing
-        at a rate of 0.28% annually and its population has increased by 2.04%
-        since the most recent census, which recorded a population of 14,255 in
-        2010. Hartselle has reached it's highest recorded population. Spanning
-        over 17 miles, Hartselle has a population density of 885 people per
-        square mile. <br />
-        The average household income in Hartselle is $76,588 with a poverty rate
-        of 8.48%. The median rental costs in recent years comes to $681 per
-        month, and the median house value is $148,600. The median age in
-        Hartselle is 41.6 years, 37.3 years for males, and 44.3 years for
-        females.
+          Hartselle is a city located in Morgan County Alabama. With a 2020
+          population of 14,546, it is the 45th largest city in Alabama and the
+          2366th largest city in the United States. Hartselle is currently
+          growing at a rate of 0.28% annually and its population has increased
+          by 2.04% since the most recent census, which recorded a population of
+          14,255 in 2010. Hartselle has reached it's highest recorded
+          population. Spanning over 17 miles, Hartselle has a population density
+          of 885 people per square mile. <br />
+          The average household income in Hartselle is $76,588 with a poverty
+          rate of 8.48%. The median rental costs in recent years comes to $681
+          per month, and the median house value is $148,600. The median age in
+          Hartselle is 41.6 years, 37.3 years for males, and 44.3 years for
+          females.
         </p>
+        <picture class="demographics-image2">
+          <source
+            srcset="images/basketball800.jpg"
+            media="(min-width: 600px)"
+          />
+          <img
+            class="banner-image"
+            src="images/basketball400.jpg"
+            alt="Hartselle High School basketball game"
+          />
+        </picture>
         <h3>Racial Composition</h3>
         <ul>
           <li>White: 88.90%</li>
@@ -119,8 +130,8 @@
           <li>Native American: 0.00%</li>
           <li>Native Hawaiian or Pacific Islander: 0.00%</li>
         </ul>
-      </section> 
-      <div class="events-container">
+      </section>
+      <div class="events-container2">
         <h2 class="event-heading">City of Hartselle Upcoming Events</h2>
         <a class="cityweb" href="https://hartselle.org/hart/events/"
           >See our website for additional details</a
@@ -131,20 +142,32 @@
           <li>Jan 4: Planning Commission</li>
           <li>Jan 6: Downtown Design Review Board</li>
         </ul>
+        <picture class="city-events-image1">
+          <source
+            srcset="images/farmersmarket750.jpg"
+            media="(min-width: 1200px)"
+          />
+          <img
+            src="images/farmersmarket450.jpg"
+            alt="Hartselle farmers market"
+          />
+        </picture>
       </div>
+
       <div class="promote-city">
         <h3>
-         Join Hartselle.org email list for weekly City of Hartselle updates and a monthly chance to win dinner for two at The Freight House Restaurant.
+          Join Hartselle.org email list for weekly updates and a monthly chance
+          to win dinner for two at The Freight House Restaurant.
         </h3>
         <form method="get" action="subscribethanks.html">
-         <label>Enter your email address*</label><br>
+          <label>Enter your email address*</label><br />
           <input
-           type="email"
-           name="email"
-           pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)"
-           size="30"
-           placeholder="myemail@provider.com"
-           required
+            type="email"
+            name="email"
+            pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)"
+            size="30"
+            placeholder="myemail@provider.com"
+            required
           />
         </form>
       </div>

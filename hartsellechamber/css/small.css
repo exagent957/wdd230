@@ -288,7 +288,8 @@ footer {
   padding-top: 1em;
 }
 .historic-facts-container img {
-  max-width: 100%;
+  max-width: 94%;
+  margin-left: 3%;
 }
 .demographics-container {
   border: solid 1px #009147;
@@ -297,18 +298,38 @@ footer {
   padding-top: 1em;
 }
 .demographics-container img {
-  max-width: 100%;
+  max-width: 94%;
+  margin-left: 3%;
+}
+.demographics-container .demographics-image2 {
+  display: none;
 }
 .demographics-container h3 {
   padding-top: 1em;
   margin-bottom: -0.5em;
 }
-.events-container a.cityweb {
+.events-container2 {
+  background-color: #fbc268;
+  color: #000;
+}
+.events-container2 a.cityweb {
   margin: -1em 0 0 3%;
   font-size: 0.8rem;
+  color: #000;
 }
-.events-container .city-events-list {
+.events-container2 a.cityweb:hover {
+  font-size: 1rem;
+}
+.events-container2 a.cityweb:hover {
+  color: #000;
+}
+.events-container2 .city-events-list {
   padding-bottom: 2em;
+}
+.events-container2 .city-events-image1 {
+  max-width: 94%;
+  margin-left: 3%;
+  display: none;
 }
 .promote-city {
   background-color: #93002c;
