@@ -30,4 +30,9 @@
     max-width: 1300px;
     margin: 0 auto;
   }
+  /*Contact Us page*/
+  .hartselle-map iframe {
+    max-width: 88%;
+    padding: 6%;
+  }
 }

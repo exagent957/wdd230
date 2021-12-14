@@ -55,7 +55,7 @@
           <img
             class="banner-image"
             src="images/hills600.jpg"
-            alt="Northern Alavama hills"
+            alt="Northern Alabama hills"
           />
         </picture>
       </div>
@@ -217,7 +217,8 @@
                 type="number"
                 name="zip"
                 placeholder="#####"
-                pattern="[0-9]{5}"
+                min="5"
+                max="10"
               />
             </li>
             <li class="application-style">
@@ -245,7 +246,9 @@
                 placeholder="We are a full-service..."
               ></textarea>
             </li>
-            <p>Select Desired Membership Level</p>
+          </ul>
+          <p>Select Desired Membership Level</p>
+          <ul>
             <li class="application-style2">
               <input
                 type="radio"

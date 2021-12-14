@@ -401,3 +401,10 @@ input {
   width: 100%;
   margin: 0 auto;
 }
+.hartselle-map {
+  background-color: #93002c;
+}
+.hartselle-map iframe {
+  max-width: 96%;
+  padding: 2%;
+}

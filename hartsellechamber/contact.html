@@ -6,10 +6,10 @@
     <meta name="author" content="Marc Williamson" />
     <meta
       name="description"
-      content="Hartselle, Alabama, Chamber of Commerce, directory, events, membership."
+      content="Contact Hartselle Area Chamber of Commerce, Hartselle, Alabama. HACC Board of Directors and map of Hartselle."
     />
     <title>Contact Us</title>
-    <link rel="shortcut icon" href="#" />
+    <link rel="shortcut icon" href="images/favicon-traincar.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -19,26 +19,248 @@
     <link rel="stylesheet" href="css/large.css" />
   </head>
   <body>
-    <h1>Under Construction</h1>
-    <header>
-      <nav>
-        <ul id="primaryNav" class="hide">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="hartselle.html">City of Hartselle</a></li>
-          <li><a href="join.html">Join</a></li>
-          <li><a href="directory.html">Directory</a></li>
-          <li class="active"><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-    </header>
-    <footer>
-      <p>
-        &copy; <span id="year"></span> | Hartselle AL Chamber of Commerce |
-        <a href="#">Attributions</a><br />
-        Last Updated: <span id="lastUpdate"></span>
-      </p>
-    </footer>
+    <div class="content">
+      <header>
+        <section class="title-container">
+          <div class="logo-hamburger">
+            <img
+              class="logo"
+              src="images/trainicon.svg"
+              alt="logo is a red train rail car"
+            />
+            <button onclick="toggleMenu()" class="hamburger-button">
+              &#9776;<br /><span class="button-title">Menu</span>
+            </button>
+          </div>
+          <div class="header-text">
+            <h1>Hartselle Area Chamber of Commerce</h1>
+            <h2><em>City of Southern Hospitality</em></h2>
+          </div>
+        </section>
+        <nav>
+          <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="hartselle.html">City of Hartselle</a>
+            </li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="active"><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="banner-image-container">
+        <picture>
+          <source srcset="images/hills1300.jpg" media="(min-width: 600px)" />
+          <img
+            class="banner-image"
+            src="images/hills600.jpg"
+            alt="Northern Alabama hills"
+          />
+        </picture>
+      </div>
+      <section class="membership-container">
+        <h3>Harteselle Area Chamber of Commerce (HACC)</h3>
+        <p>
+          P.O. Box 817, Hartselle, AL 35640 <br />
+          (256) 773-4370 <br />
+          admin@hartsellechamber.com
+        </p>
+        <br />
+        <h3>HACC Board of Directors</h3>
+        <p>
+          11 Chamber members elected by the membership lead the Hartselle Area
+          Chamber of Commerce. The board make decisions for the Chamber
+          regarding policy, establishes an annual budget and program of work,
+          elects the officers of the Chamber and hires the HACC President/CEO.
+        </p>
+        <p>
+          <strong>Brad Sheats</strong> <br />
+          CHAIR OF THE BOARD, Minister at LifeChurch
+        </p>
+        <p>
+          <strong>Missy Evans</strong> <br />
+          PRESIDENT/CEO
+        </p>
+        <p>
+          <strong>Maegan Jones</strong> <br />
+          VICE CHAIR MEMBERSHIP, Qualifying Broker/Realtor at MarMac Real
+          Estate-Hartselle
+        </p>
+        <p>
+          <strong>Stewart Smallwood</strong> <br />
+          CHAIR ELECT, President at Cerrowire
+        </p>
+        <p>
+          <strong>Bradley Colburn</strong> <br />
+          TREASURER, Chief Financial Officer at Hartselle City Schools
+        </p>
+        <p>
+          <strong>Jaime Hatcher</strong> <br />
+          Director of Administration and Events
+        </p>
+        <p>
+          <strong>Tabatha Nowak</strong> <br />
+          Director of Membership and Marketings
+        </p>
+        <p>
+          <strong>Lindsey Tapscott</strong> <br />
+          Director of Marketing, Davidson Homes, LLC
+        </p>
+        <p>
+          <strong>Dr. Ashley Holladay</strong> <br />
+          Dentistry Practioner at Hartselle Family Dentistry
+        </p>
+        <p>
+          <strong>Daxton Maze</strong> <br />
+          Owner at GreenPro Lawn Services
+        </p>
+        <p>
+          <strong>Mike Tucker</strong> <br />
+          Owner at LifeWork Therapy Services
+        </p>
+        <p>
+          <strong>Brian Kilpatrick</strong> <br />
+          Director of Manufacturing, Reels Division, Sonoco
+        </p>
+      </section>
+
+      <div class="application">
+        <h2>Reach out. We are waiting to hear from you.</h2>
+        <form
+          method="get"
+          action="contactthanks.html"
+          onkeydown="return event.key != 'Enter';"
+        >
+          <ul>
+            <li class="application-style">
+              <label for="name">Name*</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                pattern="[A-Za-z .-]{2,30}"
+                required
+                placeholder="Your name"
+              />
+            </li>
+            <li class="application-style">
+              <label for="title">Title</label>
+              <input
+                type="text"
+                name="title"
+                id="title"
+                pattern="[A-Za-z .-]{2,10}"
+                placeholder="title"
+              />
+            </li>
+            <li class="application-style">
+              <label>Email*</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)"
+                placeholder="myemail@provider.com"
+                required
+              />
+            </li>
+            <li class="application-style">
+              <label>Phone</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                pattern="[0-9 (.-)]{7,14}"
+                placeholder="1234445678"
+              />
+            </li>
+            <li class="application-style">
+              <label for="bname">Business Name</label>
+              <input
+                type="text"
+                name="bname"
+                id="bname"
+                pattern="[A-Za-z .-]{2,30}"
+                placeholder="business"
+              />
+            </li>
+
+            <li class="application-style">
+              <label
+                >How <br />
+                Can We <br />
+                Help?</label
+              >
+              <textarea
+                name="bdescription"
+                id="bdescription"
+                rows="8"
+                cols="45"
+                placeholder="Let us know what is on your mind."
+              ></textarea>
+            </li>
+          </ul>
+          <label>
+            <input
+              type="submit"
+              value="Contact Us Here"
+              class="send-application"
+            />
+          </label>
+        </form>
+      </div>
+      <div class="hartselle-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52645.87400824542!2d-86.98189345332659!3d34.442827458220144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88882a5b7b040b83%3A0x37466fd5d81d0053!2sHartselle%2C%20AL%2035640!5e0!3m2!1sen!2sus!4v1639498861700!5m2!1sen!2sus"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <footer>
+        <div class="contact-container">
+          <p><strong>Hartselle Area Chamber of Commerce</strong></p>
+          <p>P.O. Box 817, Hartselle, AL 35640</p>
+          <p>(256) 773-4370 admin@hartsellechamber.com</p>
+        </div>
+        <div class="socialmedia-container">
+          <a href="https://www.facebook.com"
+            ><img
+              class="media-icon"
+              src="images/facebook.png"
+              alt="Facebook logo"
+          /></a>
+          <a href="https://www.twitter.com"
+            ><img
+              class="media-icon"
+              src="images/twitter.png"
+              alt="Twitter logo"
+          /></a>
+          <a href="https://www.linkedin.com"
+            ><img
+              class="media-icon"
+              src="images/linkedin.png"
+              alt="LinkedIn logo"
+          /></a>
+        </div>
+        <div class="footer-bar">
+          <p>
+            &copy; <span id="year"></span> | Hartselle Area Chamber of Commerce
+            | <a href="attributions.html">Attributions</a><br />
+            Last Updated: <span id="lastUpdate"></span>
+          </p>
+        </div>
+      </footer>
+    </div>
     <script src="js/currentYear.js"></script>
     <script src="js/lastUpdate.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({ google: { families: ["Abhaya Libre", "Lato"] } });
+    </script>
   </body>
 </html>
