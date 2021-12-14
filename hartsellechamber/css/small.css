@@ -392,3 +392,9 @@ input {
   border: solid 2px #009147;
   border-style: outset;
 }
+.subscribe-thanks {
+  font-size: 1.5rem;
+  background-color: #fcf0e0;
+  width: 100%;
+  margin: 0 auto;
+}

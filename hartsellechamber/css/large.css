@@ -23,4 +23,11 @@
     bottom: 27.2em;
     margin: 0 auto;
   }
+  .subscribe-thanks {
+    max-width: 1300px;
+  }
+  .subscribe-thanks-footer {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
 }
