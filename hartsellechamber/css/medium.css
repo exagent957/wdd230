@@ -3,9 +3,6 @@
   .content {
     font-size: 14px;
   }
-  .welcome-message-container {
-    grid-template-rows: 2rem auto;
-  }
 }
 /*Become a member page*/
 .application-style textarea {
@@ -174,9 +171,6 @@
     bottom: 120em;
     left: 45em;
     margin: 0 -1em 4em 0;
-  }
-  .welcome-message-container {
-    grid-template-rows: 2rem 10rem;
   }
   .welcome-image {
     margin-top: -2rem;
