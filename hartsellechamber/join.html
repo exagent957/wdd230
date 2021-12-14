@@ -105,12 +105,9 @@
           action="applythanks.html"
           onkeydown="return event.key != 'Enter';"
         >
-          <fieldset>
-            <legend>Applicant Details</legend>
-            <ul>
-              <li>
-              <label for="fname"
-                >First Name* <em>(required)</em></label>
+          <ul>
+            <li class="application-style">
+              <label for="fname">First Name*</label>
               <input
                 type="text"
                 name="fname"
@@ -120,9 +117,8 @@
                 placeholder="first"
               />
             </li>
-            <li>
-            <label for="lname"
-              >Last Name* <em>(required)</em>
+            <li class="application-style">
+              <label for="lname">Last Name*</label>
               <input
                 type="text"
                 name="lname"
@@ -131,11 +127,9 @@
                 required
                 placeholder="last"
               />
-            </label>
             </li>
-                        <li>
-            <label for="title"
-              >Title
+            <li class="application-style">
+              <label for="title">Title</label>
               <input
                 type="text"
                 name="title"
@@ -143,10 +137,20 @@
                 pattern="[A-Za-z .-]{2,10}"
                 placeholder="title"
               />
-            </label>
             </li>
-            <label class="top">
-              Phone* <em>(required)</em>
+            <li class="application-style">
+              <label>Email*</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)"
+                placeholder="myemail@provider.com"
+                required
+              />
+            </li>
+            <li class="application-style">
+              <label>Phone*</label>
               <input
                 type="tel"
                 name="phone"
@@ -155,109 +159,138 @@
                 placeholder="1234445678"
                 required
               />
-            </label>
-            <label class="top">
-              Zip Code* <em>(required)</em>
-              <input type="number" name="zip" placeholder="55555" required />
-            </label>
-            <label class="top"
-              >Email
+            </li>
+            <li class="application-style">
+              <label for="bname">Business Name*</label>
               <input
-                type="email"
-                name="email"
-                placeholder="myemail@service.com"
+                type="text"
+                name="bname"
+                id="bname"
+                pattern="[A-Za-z .-]{2,30}"
+                required
+                placeholder="business"
               />
-            </label>
-          </fieldset>
-          <fieldset>
-            <legend>Storm Details</legend>
-            <label
-              >Storm Date
-              <input type="date" name="storm-date" />
-            </label>
-            <label
-              >Weather Event
+            </li>
+            <li class="application-style">
+              <label for="address1">Address 1</label>
               <input
-                list="weather-events"
-                placeholder="Select Weather Event   &#9660;"
+                type="text"
+                name="address1"
+                id="address1"
+                pattern="[A-Za-z .-]{5,30}"
+                placeholder="address 1"
               />
-              <datalist id="weather-events">
-                <option value="Flash Flood"></option>
-                <option value="Fire/Smoke"></option>
-                <option value="Ice Storm"></option>
-                <option value="Blizzard"></option>
-                <option value="Tornado"></option>
-                <option value="Hail"></option>
-                <option value="Severe Thunderstorm"></option>
-                <option value="High Wind"></option>
-              </datalist>
-            </label>
-            <label class="slider-container"
-              >Storm Severity <br />
-              <span class="drag-info">
-                Drag the storm severity slider. <br />
-                (1 least severe, 10 most severe)
-              </span>
+            </li>
+            <li class="application-style">
+              <label for="address2">Address 2</label>
               <input
-                type="range"
-                min="1"
-                max="10"
-                value="5"
-                class="slider"
-                id="slider-position"
+                type="text"
+                name="address2"
+                id="address2"
+                pattern="[A-Za-z .-]{5,30}"
+                placeholder="address 2"
               />
-              Severity: <span id="severity-number">5</span>
-            </label>
-            <label
-              >Storm Region
-              <select name="storm-region">
-                <option selected disabled value="select-region">
-                  Select Region
-                </option>
-                <option value="preston">Preston</option>
-                <option value="soda-springs">Soda Springs</option>
-                <option value="fish-haven">Fish Haven</option>
-              </select>
-            </label>
-            <div class="danger">
-              <p>Are You In Danger?</p>
-              <label>
-                <input type="radio" name="danger" value="yes" />Yes</label
+            </li>
+            <li class="application-style">
+              <label for="city">City</label>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                pattern="[A-Za-z .-]{5,30}"
+                placeholder="city"
+              />
+            </li>
+            <li class="application-style">
+              <label for="state">State</label>
+              <input
+                type="text"
+                name="state"
+                id="state"
+                pattern="[A-Za-z .-]{2,30}"
+                placeholder="state"
+              />
+            </li>
+            <li class="application-style">
+              <label>Zip Code</label>
+              <input
+                type="number"
+                name="zip"
+                placeholder="#####"
+                pattern="[0-9]{5}"
+              />
+            </li>
+            <li class="application-style">
+              <label for="state">Website</label>
+              <input
+                type="url"
+                name="bwebsite"
+                id="bwebsite"
+                pattern="https?://.+"
+                title="Include http://"
+                placeholder="https://mybizsite.com"
+              />
+            </li>
+            <li class="application-style">
+              <label
+                >Describe <br />
+                Your <br />
+                Business</label
               >
-              <label> <input type="radio" name="danger" value="no" />No</label>
-              <label>
-                <input type="radio" name="danger" value="maybe" />Maybe</label
-              >
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>Additional Information</legend>
-            <label class="bottom"
-              >Provide any additional information.
               <textarea
-                name="additional-information"
-                rows="10"
-                cols="54"
+                name="bdescription"
+                id="bdescription"
+                rows="8"
+                cols="45"
+                placeholder="We are a full-service..."
               ></textarea>
-            </label>
-            <label class="bottom">
+            </li>
+            <p>Select Desired Membership Level</p>
+            <li class="application-style2">
               <input
-                type="submit"
-                value="Report My Weather Event"
-                class="submitBtn"
+                type="radio"
+                id="membershipChoice1"
+                name="mlevel"
+                value="non-profit"
               />
-            </label>
-          </fieldset>
-          <label>Enter your email address*</label><br />
-          <input
-            type="email"
-            name="email"
-            pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)"
-            size="30"
-            placeholder="myemail@provider.com"
-            required
-          />
+              <label for="membershipChoice1">Non-Profit</label>
+            </li>
+            <li class="application-style2">
+              <input
+                type="radio"
+                id="membershipChoice2"
+                name="mlevel"
+                value="bronze"
+                checked
+              />
+              <label for="membershipChoice2">Bronze</label>
+            </li>
+            <li class="application-style2">
+              <input
+                type="radio"
+                id="membershipChoice3"
+                name="mlevel"
+                value="silver"
+              />
+              <label for="membershipChoice3">Silver</label>
+            </li>
+            <li class="application-style2">
+              <input
+                type="radio"
+                id="membershipChoice4"
+                name="mlevel"
+                value="gold"
+              />
+              <label for="membershipChoice4">Gold</label>
+            </li>
           </ul>
+          <label>
+            <input
+              type="submit"
+              value="Send Us Your Application"
+              class="send-application"
+            />
+          </label>
         </form>
       </div>
       <footer>

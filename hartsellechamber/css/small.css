@@ -250,6 +250,7 @@ footer {
   font-size: 0.65rem;
 }
 .contact-container {
+  border-left: solid 1px #009147;
   grid-column: 1/2;
   grid-row: 1/2;
   padding-top: 0.5rem;
@@ -257,6 +258,7 @@ footer {
   color: #000;
 }
 .socialmedia-container {
+  border-right: solid 1px #009147;
   grid-column: 2/3;
   grid-row: 1/2;
   background-color: #707070;
@@ -352,6 +354,41 @@ input {
 .application {
   border: solid 1px #93002c;
 }
-.application form fieldset {
-  display: block;
+.application p {
+  font-size: 1rem;
+}
+.application-style {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 1%;
+}
+.application-style input:invalid {
+  border: red solid 3px;
+}
+.application-style textarea {
+  max-width: 12rem;
+  margin-left: 0.3em;
+}
+.application-style2 {
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+  margin: 1%;
+  font-size: 0.9rem;
+}
+.application-style2 input {
+  height: 1em;
+  width: 1em;
+  margin-right: 0.5em;
+}
+.send-application {
+  background-color: #fddead;
+  margin-bottom: 1em;
+  padding: 2em;
+  font-size: 1rem;
+  font-weight: bold;
+  justify-content: center;
+  border: solid 2px #009147;
+  border-style: outset;
 }

@@ -7,6 +7,13 @@
     grid-template-rows: 2rem auto;
   }
 }
+/*Become a member page*/
+.application-style textarea {
+  max-width: 14rem;
+}
+.application ul li.application-style input {
+  width: 11em;
+}
 
 @media only screen and (min-width: 30em) {
   .content {
@@ -154,6 +161,16 @@
     grid-column: 2/3;
     grid-row: 1/4;
   }
+  /*Become a member page*/
+  .application-style {
+    font-size: 1rem;
+  }
+  .application-style textarea {
+    max-width: 19em;
+  }
+  .application ul li.application-style input {
+    width: 17em;
+  }
 }
 @media only screen and (min-width: 45em) {
   .current-conditions-container {
@@ -230,5 +247,12 @@
   }
   .events-container2 .city-events-image1 img {
     max-width: 70%;
+  }
+  /*Become a member page*/
+  .application-style {
+    width: 70%;
+  }
+  .application ul li.application-style input {
+    width: 19em;
   }
 }
