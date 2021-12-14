@@ -48,7 +48,7 @@
   .weather-container {
     display: flex;
     position: relative;
-    bottom: 112em;
+    bottom: 96em;
     left: 23em;
     background-color: #f9f8f7ad;
     color: rgb(0 0 0);
@@ -188,7 +188,7 @@
     max-width: 50%;
   }
   .weather-container {
-    bottom: 168em;
+    bottom: 160em;
     left: 33em;
     margin: 0 34em 10em 0;
   }

@@ -228,6 +228,9 @@ nav ul li a:hover {
   padding: 2%;
   border: solid 1px #93002c;
 }
+.current-conditions-container h3 {
+  line-height: 1em;
+}
 .three-day-forecast-container figure {
   display: flex;
 }
