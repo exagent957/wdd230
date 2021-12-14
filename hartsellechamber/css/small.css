@@ -133,7 +133,7 @@ nav ul li a:hover {
   grid-template-rows: auto;
   margin-top: -3.3rem;
   border: solid 1px #93002c;
-  padding-top: 1em;
+  padding-top: 2em;
   height: auto;
 }
 .welcome-message-container h2 {
