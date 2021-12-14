@@ -161,7 +161,7 @@ nav ul li a:hover {
 .spotlight-card-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 10rem 10rem 10rem;
+  grid-template-rows: auto;
   background-color: #fcf0e0;
   color: rgb(0 0 0);
   padding-top: 2%;
