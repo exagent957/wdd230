@@ -249,7 +249,7 @@ nav ul li a:hover {
 footer {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 5rem 3rem;
+  grid-template-rows: auto;
   font-size: 0.65rem;
 }
 .contact-container {
