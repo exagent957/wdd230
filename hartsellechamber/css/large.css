@@ -30,6 +30,10 @@
     max-width: 1300px;
     margin: 0 auto;
   }
+  /*Directory page*/
+  .bizcard-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   /*Contact Us page*/
   .hartselle-map iframe {
     max-width: 88%;

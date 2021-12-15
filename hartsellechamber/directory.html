@@ -6,10 +6,10 @@
     <meta name="author" content="Marc Williamson" />
     <meta
       name="description"
-      content="Hartselle, Alabama, Chamber of Commerce, directory, events, membership."
+      content="Hartselle Area Chamber of Commerce Member Directory"
     />
-    <title>Business Directory</title>
-    <link rel="shortcut icon" href="#" />
+    <title>Member Directory</title>
+    <link rel="shortcut icon" href="images/favicon-traincar.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -19,26 +19,104 @@
     <link rel="stylesheet" href="css/large.css" />
   </head>
   <body>
-    <h1>Under Construction</h1>
-    <header>
-      <nav>
-        <ul id="primaryNav" class="hide">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="hartselle.html">City of Hartselle</a></li>
-          <li><a href="join.html">Join</a></li>
-          <li class="active"><a href="directory.html">Directory</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-    </header>
-    <footer>
-      <p>
-        &copy; <span id="year"></span> | Hartselle AL Chamber of Commerce |
-        <a href="#">Attributions</a><br />
-        Last Updated: <span id="lastUpdate"></span>
-      </p>
-    </footer>
+    <div class="content">
+      <header>
+        <section class="title-container">
+          <div class="logo-hamburger">
+            <img
+              class="logo"
+              src="images/trainicon.svg"
+              alt="logo is a red train rail car"
+            />
+            <button onclick="toggleMenu()" class="hamburger-button">
+              &#9776;<br /><span class="button-title">Menu</span>
+            </button>
+          </div>
+          <div class="header-text">
+            <h1>Hartselle Area Chamber of Commerce</h1>
+            <h2><em>City of Southern Hospitality</em></h2>
+          </div>
+        </section>
+        <nav>
+          <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="hartselle.html">City of Hartselle</a>
+            </li>
+            <li><a href="join.html">Join</a></li>
+            <li class="active"><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="banner-image-container">
+        <picture>
+          <source
+            srcset="images/freighttrain1300.jpg"
+            media="(min-width: 600px)"
+          />
+          <img
+            class="banner-image"
+            src="images/freighttrain600.jpg"
+            alt="locomotive passing through Hartselle, Alabama"
+          />
+        </picture>
+      </div>
+      <div class="directory-title-grid">
+        <h2 class="directory-title">Business Directory</h2>
+        <button onclick="gridView()" class="btn-grid-view">
+          <img src="images/grid.png" alt="grid icon" />
+        </button>
+        <button onclick="listView()" class="btn-list-view">
+          <img src="images/list.png" alt="list icon" />
+        </button>
+      </div>
+      <div class="bizcard-container">
+        <!--JSON business data read in here from /json/bizdirectory.json-->
+      </div>
+
+      <footer>
+        <div class="contact-container">
+          <p><strong>Hartselle Area Chamber of Commerce</strong></p>
+          <p>P.O. Box 817, Hartselle, AL 35640</p>
+          <p>(256) 773-4370 admin@hartsellechamber.com</p>
+        </div>
+        <div class="socialmedia-container">
+          <a href="https://www.facebook.com"
+            ><img
+              class="media-icon"
+              src="images/facebook.png"
+              alt="Facebook logo"
+          /></a>
+          <a href="https://www.twitter.com"
+            ><img
+              class="media-icon"
+              src="images/twitter.png"
+              alt="Twitter logo"
+          /></a>
+          <a href="https://www.linkedin.com"
+            ><img
+              class="media-icon"
+              src="images/linkedin.png"
+              alt="LinkedIn logo"
+          /></a>
+        </div>
+        <div class="footer-bar">
+          <p>
+            &copy; <span id="year"></span> | Hartselle Area Chamber of Commerce
+            | <a href="attributions.html">Attributions</a><br />
+            Last Updated: <span id="lastUpdate"></span>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="js/bizdirectory.js"></script>
     <script src="js/currentYear.js"></script>
     <script src="js/lastUpdate.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({ google: { families: ["Abhaya Libre", "Lato"] } });
+    </script>
   </body>
 </html>

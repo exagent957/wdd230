@@ -44,6 +44,7 @@
   }
   .weather-container {
     display: flex;
+    gap: 1em;
     position: relative;
     bottom: 96em;
     left: 23em;
@@ -58,6 +59,9 @@
     margin-top: 1rem;
     margin-left: -2em;
     padding-top: 0;
+  }
+  .three-day-forecast-container h3 {
+    margin-top: -1em;
   }
   .welcome-image {
     margin-top: -1rem;
@@ -165,6 +169,54 @@
   .application ul li.application-style input {
     width: 17em;
   }
+  /*Directory page*/
+  .directory-title-grid {
+    display: grid;
+    grid-template-columns: 60% auto auto;
+  }
+  .btn-grid-view {
+    display: block;
+    margin: 1em;
+    width: 3.5em;
+  }
+  .btn-grid-view img {
+    width: 2rem;
+  }
+  .btn-list-view {
+    display: block;
+    margin: 1em 3em 1em 1em;
+    width: 3.5em;
+  }
+  .btn-list-view img {
+    width: 1rem;
+  }
+  .bizcard-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #93002c;
+    color: #000;
+  }
+
+  .bizcard-container section {
+    background-color: #fddead;
+    max-width: 90%;
+    margin: 3%;
+  }
+
+  .bizcard-container .list-view img {
+    display: none;
+  }
+  .bizcard-container .list-view {
+    display: block;
+    font-size: 0.7em;
+  }
+  .bizcard-container section.list-view {
+    padding-top: 0.7em;
+  }
+
+  .bizcard-container img {
+    max-width: 80%;
+  }
   /*Contact Us page*/
   .hartselle-map iframe {
     width: 48rem;
@@ -185,6 +237,7 @@
     max-width: 50%;
   }
   .weather-container {
+    gap: 7em;
     bottom: 160em;
     left: 33em;
     margin: 0 34em 10em 0;

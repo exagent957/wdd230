@@ -401,6 +401,48 @@ input {
   width: 100%;
   margin: 0 auto;
 }
+/*Directory page*/
+.directory-title {
+  padding-top: 0.5em;
+}
+.btn-grid-view {
+  display: none;
+}
+.btn-list-view {
+  display: none;
+}
+.bizcard-container {
+  background-color: #fddead;
+  color: #000;
+}
+.bizcard-container section {
+  border-bottom: solid 3px #000;
+  padding-bottom: 1em;
+}
+.bizcard-container h2 {
+  margin-top: -0.3em;
+  margin-bottom: 0.5em;
+}
+.bizcard-container img {
+  margin: 3%;
+}
+.bizcard-container p {
+  font-size: 0.8rem;
+  line-height: 0.8em;
+}
+.bizcard-container a {
+  margin-left: 3%;
+  color: #000;
+  font-size: 0.8rem;
+}
+.bizcard-container a:hover {
+  font-weight: bold;
+  color: #000;
+}
+.bizcard-container a:visited {
+  color: #000;
+}
+/*Contact us page*/
 .hartselle-map {
   background-color: #93002c;
 }

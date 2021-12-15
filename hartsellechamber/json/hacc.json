@@ -1,0 +1,68 @@
+{
+  "members": [
+    {
+      "bizlogo": "images/mccutcheon300.jpg",
+      "bizname": "McCutcheon Heating and Air",
+      "address": "1212 Main Street West",
+      "city": "Hartselle, AL 35640",
+      "phone": "(256) 773-7661",
+      "website": "http://mccutcheonac.com/"
+    },
+    {
+      "bizlogo": "images/cullmanregional300.jpg",
+      "bizname": "Cullman Regional Hartselle Urgent Care",
+      "address": "1549 US-31",
+      "city": "Hartselle, AL 35640",
+      "phone": "(256) 735-5920",
+      "website": "https://cullmanregional.com/community/hartselle-health-park/"
+    },
+    {
+      "bizlogo": "images/freighthouse300.jpg",
+      "bizname": "Freight House Restaurant",
+      "address": "200 Railroad St SW",
+      "city": "Hartselle, AL 35640",
+      "phone": "(256) 773-4600",
+      "website": "https://www.freighthousehartselle.com/restaurant/"
+    },
+    {
+      "bizlogo": "images/peck300.jpg",
+      "bizname": "Peck Funeral Home",
+      "address": "1600 Highway 31 SW",
+      "city": "Hartselle, AL 35640",
+      "phone": "(256) 773-2541",
+      "website": "https://www.peckfuneralhome.com/"
+    },
+    {
+      "bizlogo": "images/somethingblue300.jpg",
+      "bizname": "Something Blue",
+      "address": "224 Main St W",
+      "city": "Hartselle, AL 35640",
+      "phone": "(256) 773-4956",
+      "website": "https://www.thesomethingblueshoppe.com/"
+    },
+    {
+      "bizlogo": "images/peoplesbank300.jpg",
+      "bizname": "Peoples Bank",
+      "address": "501 Highway 31, Sw",
+      "city": "Hartselle, AL 35640",
+      "phone": "(256) 754-0045",
+      "website": "https://www.bankbranchlocator.com/peoples-bank-of-alabama-hartselle-branch.html"
+    },
+    {
+      "bizlogo": "images/gilchristpharmacy300.jpg",
+      "bizname": "Gilchrist Pharmacy",
+      "address": "615 Mynatt Street, Suite F",
+      "city": "Hartselle, AL 35640",
+      "phone": "(256)773-0050",
+      "website": "https://www.gilchristpharmacy.com/"
+    },
+    {
+      "bizlogo": "images/beehivebath300.jpg",
+      "bizname": "The Beehive Bathhouse",
+      "address": "227 Main Street West",
+      "city": "Hartselle, AL 35640",
+      "phone": "(256) 751-0051",
+      "website": "https://www.thebeehivebathhouse.com/"
+    }
+  ]
+}
