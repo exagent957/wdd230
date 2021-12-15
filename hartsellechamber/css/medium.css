@@ -190,33 +190,35 @@
   .btn-list-view img {
     width: 1rem;
   }
-  .bizcard-container {
+  .bizcard-container.grid-view {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #93002c;
     color: #000;
   }
-
-  .bizcard-container section {
+  .bizcard-container section.grid-view {
     background-color: #fddead;
     max-width: 90%;
     margin: 3%;
   }
-
-  .bizcard-container .list-view img {
-    display: none;
+  .bizcard-container.grid-view img {
+    max-width: 80%;
   }
-  .bizcard-container .list-view {
+  .bizcard-container.list-view {
     display: block;
     font-size: 0.7em;
   }
   .bizcard-container section.list-view {
     padding-top: 0.7em;
+    line-height: 1.8em;
+  }
+  .bizcard-container.list-view img {
+    display: none;
+  }
+  .bizcard-container.list-view p {
+    padding-bottom: 0;
   }
 
-  .bizcard-container img {
-    max-width: 80%;
-  }
   /*Contact Us page*/
   .hartselle-map iframe {
     width: 48rem;

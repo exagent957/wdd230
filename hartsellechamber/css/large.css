@@ -31,7 +31,7 @@
     margin: 0 auto;
   }
   /*Directory page*/
-  .bizcard-container {
+  .bizcard-container.grid-view {
     grid-template-columns: 1fr 1fr 1fr;
   }
   /*Contact Us page*/
